@@ -614,4 +614,951 @@
 
   <script>
     // Private In-Memory Admission Dataset (149 records from uploaded sheet; hidden until verified search)
-    const INITIAL_APPLICATIONS = [{"id": "152", "appId": "AMM202648452", "session": "2027", "applyingClass": "VIII", "name": "Royaboruddin Naskar", "gender": "Male", "caste": "General", "dob": "24/08/2013", "dobIso": "2013-08-24", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Ayub Ali Naskar", "fatherPhone": "8337094662", "fatherWhatsapp": "8337094662", "motherName": "Rojina Naskar", "motherPhone": "8337094662", "motherWhatsapp": "8337094662", "village": "Padmapukur Kazipara", "postOffice": "Baruipur", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "700144", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 15:54:49"}, {"id": "151", "appId": "AMM202625049", "session": "2027", "applyingClass": "IX", "name": "Toufik Sekh", "gender": "Male", "caste": "General", "dob": "08/07/2012", "dobIso": "2012-07-08", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Jiyarul Sekh", "fatherPhone": "8649845534", "fatherWhatsapp": "8649845534", "motherName": "Not Mentioned", "motherPhone": "8649845534", "motherWhatsapp": "8649845534", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 15:48:31"}, {"id": "150", "appId": "AMM202685846", "session": "2027", "applyingClass": "VII", "name": "Rajibul Laskar", "gender": "Male", "caste": "General", "dob": "18/12/2014", "dobIso": "2014-12-18", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Rakib Laskar", "fatherPhone": "6296353711", "fatherWhatsapp": "6296353711", "motherName": "Rina Laskar", "motherPhone": "6296353711", "motherWhatsapp": "6296353711", "village": "Chatra", "postOffice": "Chatra Maldari", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 15:05:03"}, {"id": "149", "appId": "AMM202649816", "session": "2027", "applyingClass": "V", "name": "Asifa Halder", "gender": "Female", "caste": "General", "dob": "30/12/2016", "dobIso": "2016-12-30", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Hafijur Rahaman Halder", "fatherPhone": "7699285502", "fatherWhatsapp": "7699285502", "motherName": "Alema Halder", "motherPhone": "7699285502", "motherWhatsapp": "7699285502", "village": "Purba Radhaballav Pur", "postOffice": "Radhaballav Pur", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743349", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:59:17"}, {"id": "148", "appId": "AMM202690018", "session": "2027", "applyingClass": "VII", "name": "Mukurder Laskar", "gender": "Male", "caste": "General", "dob": "01/11/2014", "dobIso": "2014-11-01", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Mijanur Laskar", "fatherPhone": "1111111111", "fatherWhatsapp": "1111111111", "motherName": "Not Mentioned", "motherPhone": "1111111111", "motherWhatsapp": "", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:48:08"}, {"id": "147", "appId": "AMM202619131", "session": "2027", "applyingClass": "VI", "name": "Tanvir Laskar", "gender": "Male", "caste": "General", "dob": "24/10/2015", "dobIso": "2015-10-24", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Hafijul Laskar", "fatherPhone": "9002765053", "fatherWhatsapp": "9002765053", "motherName": "Tamina Laskar", "motherPhone": "9002765053", "motherWhatsapp": "9002765053", "village": "Uttarpara Nij", "postOffice": "Baharu", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:45:14"}, {"id": "146", "appId": "AMM202625506", "session": "2027", "applyingClass": "VIII", "name": "Jaidul Sekh", "gender": "Male", "caste": "General", "dob": "29/06/2013", "dobIso": "2013-06-29", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Mofijul Sekh", "fatherPhone": "9775647940", "fatherWhatsapp": "9775647940", "motherName": "Jayeda Sekh", "motherPhone": "9775647940", "motherWhatsapp": "9775647940", "village": "Arunnagar Dakshin", "postOffice": "Chatra Maldari", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:33:01"}, {"id": "145", "appId": "AMM202615453", "session": "2027", "applyingClass": "IX", "name": "Suhan Purkait", "gender": "Male", "caste": "General", "dob": "01/01/2013", "dobIso": "2013-01-01", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Jahiruddin Purkait", "fatherPhone": "6297619800", "fatherWhatsapp": "6297619800", "motherName": "Sumaiya Bibi", "motherPhone": "6297619800", "motherWhatsapp": "6297619800", "village": "Purba Sankarpur", "postOffice": "Dhola Hat", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:14:54"}, {"id": "144", "appId": "AMM202671070", "session": "2027", "applyingClass": "IX", "name": "Farhan Purkait", "gender": "Male", "caste": "General", "dob": "21/11/2012", "dobIso": "2012-11-21", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Sherif Uddin", "fatherPhone": "9734015171", "fatherWhatsapp": "9734015171", "motherName": "Not Mentioned", "motherPhone": "9734015171", "motherWhatsapp": "9734015171", "village": "Sankarpur", "postOffice": "Sankarpur", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:53:11"}, {"id": "143", "appId": "AMM202678582", "session": "2027", "applyingClass": "V", "name": "Tazmim Khatun", "gender": "Female", "caste": "General", "dob": "20/01/2015", "dobIso": "2015-01-20", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Tazuddin Purkait", "fatherPhone": "8927766450", "fatherWhatsapp": "8927766450", "motherName": "Not Mentioned", "motherPhone": "8927766450", "motherWhatsapp": "8927766450", "village": "Sankarpur", "postOffice": "Sankarpur", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:49:49"}, {"id": "142", "appId": "AMM202662342", "session": "2027", "applyingClass": "V", "name": "Jeba Irani", "gender": "Female", "caste": "General", "dob": "11/01/2016", "dobIso": "2016-01-11", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Manuar Hossain Dhali", "fatherPhone": "8116633153", "fatherWhatsapp": "8116633153", "motherName": "Jarina Dhali", "motherPhone": "8116633153", "motherWhatsapp": "8116633153", "village": "Kamaria", "postOffice": "Kamaria", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:45:43"}, {"id": "141", "appId": "AMM202627383", "session": "2027", "applyingClass": "V", "name": "Sohan Laskar", "gender": "Male", "caste": "General", "dob": "20/11/2015", "dobIso": "2015-11-20", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Abdul Alim Laskar", "fatherPhone": "9735465285", "fatherWhatsapp": "9735465285", "motherName": "Halima Bibi Laskar", "motherPhone": "9735465285", "motherWhatsapp": "9735465285", "village": "Fatikbaria", "postOffice": "Konchfal", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:27:49"}, {"id": "140", "appId": "AMM202697157", "session": "2027", "applyingClass": "V", "name": "Samim Khan", "gender": "Male", "caste": "General", "dob": "12/03/2016", "dobIso": "2016-03-12", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Alamgir Khan", "fatherPhone": "8250891894", "fatherWhatsapp": "8250891894", "motherName": "Not Mentioned", "motherPhone": "8250891894", "motherWhatsapp": "8250891894", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:15:47"}, {"id": "139", "appId": "AMM202697188", "session": "2027", "applyingClass": "VIII", "name": "Ramisah Samshe Khatun", "gender": "Female", "caste": "General", "dob": "29/08/2013", "dobIso": "2013-08-29", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Kauchhar Ali Halder", "fatherPhone": "9593316058", "fatherWhatsapp": "9593316058", "motherName": "Not Mentioned", "motherPhone": "9593316058", "motherWhatsapp": "9593316058", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:01:09"}, {"id": "138", "appId": "AMM202622068", "session": "2027", "applyingClass": "VIII", "name": "Mahaima Halder", "gender": "Female", "caste": "General", "dob": "18/02/2013", "dobIso": "2013-02-18", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Abdul Maruf", "fatherPhone": "8207021708", "fatherWhatsapp": "8207021708", "motherName": "Not Mentioned", "motherPhone": "8207021708", "motherWhatsapp": "8207021708", "village": "Nilambarpur", "postOffice": "Nilambarpur", "policeStation": "Mandir Bazar", "district": "24 pgs (S)", "pinCode": "743336", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 12:58:31"}, {"id": "137", "appId": "AMM202611304", "session": "2027", "applyingClass": "VIII", "name": "Sabnom Molla", "gender": "Female", "caste": "General", "dob": "07/05/2013", "dobIso": "2013-05-07", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Ahasan Ulla Molla", "fatherPhone": "8250592993", "fatherWhatsapp": "9564984608", "motherName": "Najima Molla", "motherPhone": "8250592993", "motherWhatsapp": "9564984608", "village": "Kirtankhola", "postOffice": "Kripakhali", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 12:14:54"}, {"id": "136", "appId": "AMM202613268", "session": "2027", "applyingClass": "VIII", "name": "Sahil Sk", "gender": "Male", "caste": "General", "dob": "06/06/2013", "dobIso": "2013-06-06", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Motibur Rahaman Sk", "fatherPhone": "6296020338", "fatherWhatsapp": "6296020338", "motherName": "Not Mentioned", "motherPhone": "6296020338", "motherWhatsapp": "", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 12:04:53"}, {"id": "135", "appId": "AMM202685091", "session": "2027", "applyingClass": "VI", "name": "Mirajul Sardar", "gender": "Male", "caste": "General", "dob": "16/07/2015", "dobIso": "2015-07-16", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Ainul Sardar", "fatherPhone": "7001658274", "fatherWhatsapp": "7001658274", "motherName": "Mamtaj Sardar", "motherPhone": "7001658274", "motherWhatsapp": "7001658274", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 11:59:44"}, {"id": "134", "appId": "AMM202647564", "session": "2027", "applyingClass": "VIII", "name": "Tabassum Molla", "gender": "Female", "caste": "General", "dob": "16/11/2013", "dobIso": "2013-11-16", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Younus Ali Molla", "fatherPhone": "9088671277", "fatherWhatsapp": "9732396595", "motherName": "Mabiya Molla", "motherPhone": "9088671277", "motherWhatsapp": "9732396595", "village": "Gopalnagar", "postOffice": "Gopalnagar", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 11:55:22"}, {"id": "133", "appId": "AMM202626020", "session": "2027", "applyingClass": "V", "name": "Shanwaz Laskar", "gender": "Male", "caste": "General", "dob": "12/04/2016", "dobIso": "2016-04-12", "bloodGroup": "A+", "schoolName": "Chalantika Nursery K.G School", "fatherName": "Late Sajjad Laskar", "fatherPhone": "7363916996", "fat
+    const INITIAL_APPLICATIONS = [{"id": "152", "appId": "AMM202648452", "session": "2027", "applyingClass": "VIII", "name": "Royaboruddin Naskar", "gender": "Male", "caste": "General", "dob": "24/08/2013", "dobIso": "2013-08-24", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Ayub Ali Naskar", "fatherPhone": "8337094662", "fatherWhatsapp": "8337094662", "motherName": "Rojina Naskar", "motherPhone": "8337094662", "motherWhatsapp": "8337094662", "village": "Padmapukur Kazipara", "postOffice": "Baruipur", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "700144", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 15:54:49"}, {"id": "151", "appId": "AMM202625049", "session": "2027", "applyingClass": "IX", "name": "Toufik Sekh", "gender": "Male", "caste": "General", "dob": "08/07/2012", "dobIso": "2012-07-08", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Jiyarul Sekh", "fatherPhone": "8649845534", "fatherWhatsapp": "8649845534", "motherName": "Not Mentioned", "motherPhone": "8649845534", "motherWhatsapp": "8649845534", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 15:48:31"}, {"id": "150", "appId": "AMM202685846", "session": "2027", "applyingClass": "VII", "name": "Rajibul Laskar", "gender": "Male", "caste": "General", "dob": "18/12/2014", "dobIso": "2014-12-18", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Rakib Laskar", "fatherPhone": "6296353711", "fatherWhatsapp": "6296353711", "motherName": "Rina Laskar", "motherPhone": "6296353711", "motherWhatsapp": "6296353711", "village": "Chatra", "postOffice": "Chatra Maldari", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 15:05:03"}, {"id": "149", "appId": "AMM202649816", "session": "2027", "applyingClass": "V", "name": "Asifa Halder", "gender": "Female", "caste": "General", "dob": "30/12/2016", "dobIso": "2016-12-30", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Hafijur Rahaman Halder", "fatherPhone": "7699285502", "fatherWhatsapp": "7699285502", "motherName": "Alema Halder", "motherPhone": "7699285502", "motherWhatsapp": "7699285502", "village": "Purba Radhaballav Pur", "postOffice": "Radhaballav Pur", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743349", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:59:17"}, {"id": "148", "appId": "AMM202690018", "session": "2027", "applyingClass": "VII", "name": "Mukurder Laskar", "gender": "Male", "caste": "General", "dob": "01/11/2014", "dobIso": "2014-11-01", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Mijanur Laskar", "fatherPhone": "1111111111", "fatherWhatsapp": "1111111111", "motherName": "Not Mentioned", "motherPhone": "1111111111", "motherWhatsapp": "", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:48:08"}, {"id": "147", "appId": "AMM202619131", "session": "2027", "applyingClass": "VI", "name": "Tanvir Laskar", "gender": "Male", "caste": "General", "dob": "24/10/2015", "dobIso": "2015-10-24", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Hafijul Laskar", "fatherPhone": "9002765053", "fatherWhatsapp": "9002765053", "motherName": "Tamina Laskar", "motherPhone": "9002765053", "motherWhatsapp": "9002765053", "village": "Uttarpara Nij", "postOffice": "Baharu", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:45:14"}, {"id": "146", "appId": "AMM202625506", "session": "2027", "applyingClass": "VIII", "name": "Jaidul Sekh", "gender": "Male", "caste": "General", "dob": "29/06/2013", "dobIso": "2013-06-29", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Mofijul Sekh", "fatherPhone": "9775647940", "fatherWhatsapp": "9775647940", "motherName": "Jayeda Sekh", "motherPhone": "9775647940", "motherWhatsapp": "9775647940", "village": "Arunnagar Dakshin", "postOffice": "Chatra Maldari", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:33:01"}, {"id": "145", "appId": "AMM202615453", "session": "2027", "applyingClass": "IX", "name": "Suhan Purkait", "gender": "Male", "caste": "General", "dob": "01/01/2013", "dobIso": "2013-01-01", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Jahiruddin Purkait", "fatherPhone": "6297619800", "fatherWhatsapp": "6297619800", "motherName": "Sumaiya Bibi", "motherPhone": "6297619800", "motherWhatsapp": "6297619800", "village": "Purba Sankarpur", "postOffice": "Dhola Hat", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:14:54"}, {"id": "144", "appId": "AMM202671070", "session": "2027", "applyingClass": "IX", "name": "Farhan Purkait", "gender": "Male", "caste": "General", "dob": "21/11/2012", "dobIso": "2012-11-21", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Sherif Uddin", "fatherPhone": "9734015171", "fatherWhatsapp": "9734015171", "motherName": "Not Mentioned", "motherPhone": "9734015171", "motherWhatsapp": "9734015171", "village": "Sankarpur", "postOffice": "Sankarpur", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:53:11"}, {"id": "143", "appId": "AMM202678582", "session": "2027", "applyingClass": "V", "name": "Tazmim Khatun", "gender": "Female", "caste": "General", "dob": "20/01/2015", "dobIso": "2015-01-20", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Tazuddin Purkait", "fatherPhone": "8927766450", "fatherWhatsapp": "8927766450", "motherName": "Not Mentioned", "motherPhone": "8927766450", "motherWhatsapp": "8927766450", "village": "Sankarpur", "postOffice": "Sankarpur", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:49:49"}, {"id": "142", "appId": "AMM202662342", "session": "2027", "applyingClass": "V", "name": "Jeba Irani", "gender": "Female", "caste": "General", "dob": "11/01/2016", "dobIso": "2016-01-11", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Manuar Hossain Dhali", "fatherPhone": "8116633153", "fatherWhatsapp": "8116633153", "motherName": "Jarina Dhali", "motherPhone": "8116633153", "motherWhatsapp": "8116633153", "village": "Kamaria", "postOffice": "Kamaria", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:45:43"}, {"id": "141", "appId": "AMM202627383", "session": "2027", "applyingClass": "V", "name": "Sohan Laskar", "gender": "Male", "caste": "General", "dob": "20/11/2015", "dobIso": "2015-11-20", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Abdul Alim Laskar", "fatherPhone": "9735465285", "fatherWhatsapp": "9735465285", "motherName": "Halima Bibi Laskar", "motherPhone": "9735465285", "motherWhatsapp": "9735465285", "village": "Fatikbaria", "postOffice": "Konchfal", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:27:49"}, {"id": "140", "appId": "AMM202697157", "session": "2027", "applyingClass": "V", "name": "Samim Khan", "gender": "Male", "caste": "General", "dob": "12/03/2016", "dobIso": "2016-03-12", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Alamgir Khan", "fatherPhone": "8250891894", "fatherWhatsapp": "8250891894", "motherName": "Not Mentioned", "motherPhone": "8250891894", "motherWhatsapp": "8250891894", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:15:47"}, {"id": "139", "appId": "AMM202697188", "session": "2027", "applyingClass": "VIII", "name": "Ramisah Samshe Khatun", "gender": "Female", "caste": "General", "dob": "29/08/2013", "dobIso": "2013-08-29", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Kauchhar Ali Halder", "fatherPhone": "9593316058", "fatherWhatsapp": "9593316058", "motherName": "Not Mentioned", "motherPhone": "9593316058", "motherWhatsapp": "9593316058", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:01:09"}, {"id": "138", "appId": "AMM202622068", "session": "2027", "applyingClass": "VIII", "name": "Mahaima Halder", "gender": "Female", "caste": "General", "dob": "18/02/2013", "dobIso": "2013-02-18", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Abdul Maruf", "fatherPhone": "8207021708", "fatherWhatsapp": "8207021708", "motherName": "Not Mentioned", "motherPhone": "8207021708", "motherWhatsapp": "8207021708", "village": "Nilambarpur", "postOffice": "Nilambarpur", "policeStation": "Mandir Bazar", "district": "24 pgs (S)", "pinCode": "743336", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 12:58:31"}, {"id": "137", "appId": "AMM202611304", "session": "2027", "applyingClass": "VIII", "name": "Sabnom Molla", "gender": "Female", "caste": "General", "dob": "07/05/2013", "dobIso": "2013-05-07", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Ahasan Ulla Molla", "fatherPhone": "8250592993", "fatherWhatsapp": "9564984608", "motherName": "Najima Molla", "motherPhone": "8250592993", "motherWhatsapp": "9564984608", "village": "Kirtankhola", "postOffice": "Kripakhali", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 12:14:54"}, {"id": "136", "appId": "AMM202613268", "session": "2027", "applyingClass": "VIII", "name": "Sahil Sk", "gender": "Male", "caste": "General", "dob": "06/06/2013", "dobIso": "2013-06-06", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Motibur Rahaman Sk", "fatherPhone": "6296020338", "fatherWhatsapp": "6296020338", "motherName": "Not Mentioned", "motherPhone": "6296020338", "motherWhatsapp": "", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 12:04:53"}, {"id": "135", "appId": "AMM202685091", "session": "2027", "applyingClass": "VI", "name": "Mirajul Sardar", "gender": "Male", "caste": "General", "dob": "16/07/2015", "dobIso": "2015-07-16", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Ainul Sardar", "fatherPhone": "7001658274", "fatherWhatsapp": "7001658274", "motherName": "Mamtaj Sardar", "motherPhone": "7001658274", "motherWhatsapp": "7001658274", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 11:59:44"}, {"id": "134", "appId": "AMM202647564", "session": "2027", "applyingClass": "VIII", "name": "Tabassum Molla", "gender": "Female", "caste": "General", "dob": "16/11/2013", "dobIso": "2013-11-16", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Younus Ali Molla", "fatherPhone": "9088671277", "fatherWhatsapp": "9732396595", "motherName": "Mabiya Molla", "motherPhone": "9088671277", "motherWhatsapp": "9732396595", "village": "Gopalnagar", "postOffice": "Gopalnagar", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 11:55:22"}, {"id": "133", "appId": "AMM202626020", "session": "2027", "applyingClass": "V", "name": "Shanwaz Laskar", "gender": "Male", "caste": "General", "dob": "12/04/2016", "dobIso": "2016-04-12", "bloodGroup": "A+", "schoolName": "Chalantika Nursery K.G School", "fatherName": "Late Sajjad Laskar", "fatherPhone": "7363916996", "fatherWhatsapp": "9641109639", "motherName": "Jasmina Bibi", "motherPhone": "7363916996", "motherWhatsapp": "9641109639", "village": "Kashimpur Dihi Kalas", "postOffice": "Kalash", "policeStation": "Magrahat - II", "district": "24 pgs (S)", "pinCode": "743609", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 11:48:11"}, {"id": "132", "appId": "AMM202656586", "session": "2027", "applyingClass": "IX", "name": "Sakib Molla", "gender": "Female", "caste": "General", "dob": "24/08/2012", "dobIso": "2012-08-24", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Saddam Hossain Mollaa", "fatherPhone": "6295689967", "fatherWhatsapp": "6295689967", "motherName": "Hamida Molla", "motherPhone": "6295689967", "motherWhatsapp": "6295689967", "village": "Chaltaberia", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-30 19:37:09"}, {"id": "131", "appId": "AMM202681299", "session": "2027", "applyingClass": "V", "name": "Tanisha Molla", "gender": "Female", "caste": "General", "dob": "03/09/2016", "dobIso": "2016-09-03", "bloodGroup": "A+", "schoolName": "Nurani National School", "fatherName": "Nur Jamal Molla", "fatherPhone": "9088828351", "fatherWhatsapp": "8918193293", "motherName": "Rokeya Molla", "motherPhone": "9088828351", "motherWhatsapp": "8918193293", "village": "Bamoner Chak", "postOffice": "Bakultala Hat", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-30 18:53:02"}, {"id": "130", "appId": "AMM202660471", "session": "2027", "applyingClass": "V", "name": "Sadia Mondal", "gender": "Female", "caste": "General", "dob": "08/09/2016", "dobIso": "2016-09-08", "bloodGroup": "A+", "schoolName": "Ramjane Alam Shishu Academy", "fatherName": "Md Riajul Mondal", "fatherPhone": "9775612002", "fatherWhatsapp": "9775612002", "motherName": "Hosnara Mondal", "motherPhone": "9775612002", "motherWhatsapp": "9775612002", "village": "Morpia", "postOffice": "Devisabad", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-30 18:39:16"}, {"id": "129", "appId": "AMM202650695", "session": "2027", "applyingClass": "V", "name": "Nafisa Sardar", "gender": "Female", "caste": "General", "dob": "27/05/2016", "dobIso": "2016-05-27", "bloodGroup": "A+", "schoolName": "Ramjane Alam Shishu Academy", "fatherName": "Najibar Rahaman Sardar", "fatherPhone": "9775612002", "fatherWhatsapp": "9775612002", "motherName": "Ajmira Sardar", "motherPhone": "9775612002", "motherWhatsapp": "9775612002", "village": "Devisabad", "postOffice": "Devisabad", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-30 18:35:29"}, {"id": "128", "appId": "AMM202624364", "session": "2027", "applyingClass": "IX", "name": "Monjur Alom Gayen", "gender": "Male", "caste": "General", "dob": "21/08/2012", "dobIso": "2012-08-21", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Abdul Hakim Gayen", "fatherPhone": "7864081410", "fatherWhatsapp": "7864081410", "motherName": "Habiba Gayen", "motherPhone": "7864081410", "motherWhatsapp": "7864081410", "village": "Chaltaberia", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-30 18:24:40"}, {"id": "127", "appId": "AMM202610276", "session": "2027", "applyingClass": "VI", "name": "Asfa Gazi", "gender": "Female", "caste": "General", "dob": "16/10/2015", "dobIso": "2015-10-16", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Amirul Gazi", "fatherPhone": "6295843208", "fatherWhatsapp": "6295843208", "motherName": "Joynur Khatun Gazi", "motherPhone": "6295843208", "motherWhatsapp": "6295843208", "village": "Saligoria", "postOffice": "Jugdia", "policeStation": "Magrahat", "district": "24 pgs (S)", "pinCode": "743355", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-30 16:34:56"}, {"id": "126", "appId": "AMM202635974", "session": "2027", "applyingClass": "VII", "name": "Juhina Darjee", "gender": "Female", "caste": "OBC", "dob": "19/11/2014", "dobIso": "2014-11-19", "bloodGroup": "A+", "schoolName": "Monirtat Madhyamik Shiksha", "fatherName": "Jahangir Darjee", "fatherPhone": "9647972824", "fatherWhatsapp": "9647972824", "motherName": "Rina Sultana", "motherPhone": "9647972824", "motherWhatsapp": "9647972824", "village": "Manirtat - V", "postOffice": "Madhya Manirtat", "policeStation": "Bakultala", "district": "24", "pinCode": "743349", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-30 14:13:46"}, {"id": "125", "appId": "AMM202635203", "session": "2027", "applyingClass": "VI", "name": "MEHEDI HASAN GHARAMI", "gender": "Male", "caste": "General", "dob": "08/07/2015", "dobIso": "2015-07-08", "bloodGroup": "B+", "schoolName": "MERIGUNJ HIGH MADRASAH", "fatherName": "SHAHANOYAJ GHARAMI", "fatherPhone": "9596691014", "fatherWhatsapp": "9596691014", "motherName": "NURJAHAN GHARAMI", "motherPhone": "9596691014", "motherWhatsapp": "9596691014", "village": "MERIGUNJ", "postOffice": "MERIGUNJ", "policeStation": "KULTALI", "district": "SOUTH 24 PARGANAS", "pinCode": "743329", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-29 17:40:27"}, {"id": "124", "appId": "AMM202633257", "session": "2027", "applyingClass": "V", "name": "Salman Molla", "gender": "Male", "caste": "General", "dob": "15/05/2016", "dobIso": "2016-05-15", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Anowar Hossain Molla", "fatherPhone": "9793657168", "fatherWhatsapp": "9793657168", "motherName": "Sima Molla", "motherPhone": "9793657168", "motherWhatsapp": "9793657168", "village": "Uttar Garankati", "postOffice": "Buinchbati", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-29 12:44:53"}, {"id": "123", "appId": "AMM202659516", "session": "2027", "applyingClass": "V", "name": "Shabnam Parvin Sardar", "gender": "Female", "caste": "General", "dob": "02/08/2016", "dobIso": "2016-08-02", "bloodGroup": "A+", "schoolName": "Hatpukuria Devisabad F.P.S", "fatherName": "Safikul Islam Sardar", "fatherPhone": "9733648255", "fatherWhatsapp": "9733648255", "motherName": "Rina Sardar", "motherPhone": "9733648255", "motherWhatsapp": "9733648255", "village": "Hatpukuria", "postOffice": "Bhaleya", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-29 12:34:12"}, {"id": "122", "appId": "AMM202686224", "session": "2027", "applyingClass": "IX", "name": "Rukaiya Molla", "gender": "Female", "caste": "General", "dob": "26/08/2012", "dobIso": "2012-08-26", "bloodGroup": "A+", "schoolName": "D.B.D.K.K. High School", "fatherName": "Atikul Molla", "fatherPhone": "9775136302", "fatherWhatsapp": "9775136302", "motherName": "Sundari Molla", "motherPhone": "9775136302", "motherWhatsapp": "9775136302", "village": "Paschim Rupnagar", "postOffice": "Boinchbati", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-29 12:13:45"}, {"id": "121", "appId": "AMM202671006", "session": "2027", "applyingClass": "V", "name": "Rimisha Jamadar", "gender": "Female", "caste": "General", "dob": "07/09/2016", "dobIso": "2016-09-07", "bloodGroup": "A+", "schoolName": "Multi F.P School", "fatherName": "Ramjan Ali Jamadar", "fatherPhone": "9836820263", "fatherWhatsapp": "9836820263", "motherName": "Fojila Bibi", "motherPhone": "9836820263", "motherWhatsapp": "9836820263", "village": "Dakshin Marjada", "postOffice": "Hotar", "policeStation": "Magrahat", "district": "24 pgs (S)", "pinCode": "743610", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-28 21:20:27"}, {"id": "120", "appId": "AMM202620334", "session": "2027", "applyingClass": "V", "name": "Yesrat Jamadar", "gender": "Female", "caste": "General", "dob": "12/09/2016", "dobIso": "2016-09-12", "bloodGroup": "A+", "schoolName": "Multi F.P School", "fatherName": "Musliuddin Jamadar", "fatherPhone": "9836820263", "fatherWhatsapp": "9836820263", "motherName": "Arjina Jamadar", "motherPhone": "9836820263", "motherWhatsapp": "9836820263", "village": "Dakshin Morjada", "postOffice": "Hotor", "policeStation": "Magrahat", "district": "24 pgs (S)", "pinCode": "743610", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-28 21:14:19"}, {"id": "119", "appId": "AMM202649782", "session": "2027", "applyingClass": "VII", "name": "MONTAHINA MOLLA", "gender": "Female", "caste": "General", "dob": "10/04/2014", "dobIso": "2014-04-10", "bloodGroup": "A+", "schoolName": "SOUTH BISHNUPUR GIRLS HS", "fatherName": "MAFIJUL MOLLA", "fatherPhone": "9733926082", "fatherWhatsapp": "9733926082", "motherName": "AZMINA MOLLA", "motherPhone": "7797148982", "motherWhatsapp": "7797148982", "village": "BALADEBPUR", "postOffice": "RAMAKANTANAGAR", "policeStation": "MANDIR BAZAR", "district": "SOUTH 24 PARGANAS", "pinCode": "743395", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-28 19:02:48"}, {"id": "118", "appId": "AMM202683218", "session": "2027", "applyingClass": "VIII", "name": "Suhana Parvin Sardar", "gender": "Female", "caste": "General", "dob": "07/11/2013", "dobIso": "2013-11-07", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Sirajul Sardar", "fatherPhone": "9734588875", "fatherWhatsapp": "9734588875", "motherName": "Serina Sardar", "motherPhone": "9734588875", "motherWhatsapp": "9734588875", "village": "Sekhpara Uttar Budhakhali", "postOffice": "Golabari", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743329", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-28 15:31:57"}, {"id": "117", "appId": "AMM202612027", "session": "2027", "applyingClass": "VIII", "name": "Eshana Baidya", "gender": "Female", "caste": "General", "dob": "26/10/2013", "dobIso": "2013-10-26", "bloodGroup": "A+", "schoolName": "Al-Hilal Mission", "fatherName": "Mofachsel Baidya", "fatherPhone": "8910952984", "fatherWhatsapp": "7699885130", "motherName": "Rashida Baidya", "motherPhone": "8910952984", "motherWhatsapp": "7699885130", "village": "Tentulberia", "postOffice": "Mathurapur RS", "policeStation": "Mathurapur", "district": "24 pgs (S)", "pinCode": "743354", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-28 13:44:12"}, {"id": "116", "appId": "AMM202687773", "session": "2027", "applyingClass": "V", "name": "Asik Laskar", "gender": "Male", "caste": "General", "dob": "18/01/2016", "dobIso": "2016-01-18", "bloodGroup": "A+", "schoolName": "Uaayan Sishu Sadan", "fatherName": "Sahajahan Laskar", "fatherPhone": "9239731149", "fatherWhatsapp": "7029823841", "motherName": "Asura Bibi Laskar", "motherPhone": "9239731149", "motherWhatsapp": "7029823841", "village": "Durga", "postOffice": "Keyatala", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-28 12:06:58"}, {"id": "115", "appId": "AMM202648719", "session": "2027", "applyingClass": "IX", "name": "Afsana Ghorami", "gender": "Female", "caste": "General", "dob": "01/01/2012", "dobIso": "2012-01-01", "bloodGroup": "A+", "schoolName": "Hatpukuria J.H School", "fatherName": "Alif Ghorami", "fatherPhone": "8918998646", "fatherWhatsapp": "8918998646", "motherName": "Monira Ghorami", "motherPhone": "8918998646", "motherWhatsapp": "8918998646", "village": "Hatpukuria", "postOffice": "Bhaleya", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-28 11:28:09"}, {"id": "114", "appId": "AMM202669802", "session": "2027", "applyingClass": "V", "name": "Ajis Uddin Molla", "gender": "Male", "caste": "General", "dob": "13/08/2016", "dobIso": "2016-08-13", "bloodGroup": "A+", "schoolName": "Kishalay Shishu Shikhyatan", "fatherName": "Aptaf Uddin Molla", "fatherPhone": "8001006191", "fatherWhatsapp": "8001006191", "motherName": "Muslima Molla", "motherPhone": "8001006191", "motherWhatsapp": "8001006191", "village": "Jangalia", "postOffice": "Punpua", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 21:51:09"}, {"id": "113", "appId": "AMM202632895", "session": "2027", "applyingClass": "VIII", "name": "Abdus Samad Sardar", "gender": "Male", "caste": "General", "dob": "11/12/2013", "dobIso": "2013-12-11", "bloodGroup": "A+", "schoolName": "Multi P.S Instituition (H.S)", "fatherName": "Abdulsalam Sardar", "fatherPhone": "8617355084", "fatherWhatsapp": "8617355084", "motherName": "Rejina Sardar", "motherPhone": "8617355084", "motherWhatsapp": "8617355084", "village": "Multi", "postOffice": "Multi", "policeStation": "Magrahat", "district": "24 pgs (S)", "pinCode": "743610", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 21:43:16"}, {"id": "112", "appId": "AMM202672514", "session": "2027", "applyingClass": "V", "name": "Julaika Sekh", "gender": "Female", "caste": "General", "dob": "04/09/2017", "dobIso": "2017-09-04", "bloodGroup": "A+", "schoolName": "Haji Younus Ali Academy", "fatherName": "Abu Jobayet Sekh", "fatherPhone": "7679212149", "fatherWhatsapp": "7679212149", "motherName": "Tamanna Khatun", "motherPhone": "7679212149", "motherWhatsapp": "7679212149", "village": "Bhaleya", "postOffice": "Bhaleya", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 21:32:22"}, {"id": "111", "appId": "AMM202637903", "session": "2027", "applyingClass": "V", "name": "Sadika Akhand", "gender": "Female", "caste": "General", "dob": "25/05/2016", "dobIso": "2016-05-25", "bloodGroup": "A+", "schoolName": "Hatpukuria Devisabad F.P.S", "fatherName": "Sirajul Akhand", "fatherPhone": "9641458747", "fatherWhatsapp": "9641458747", "motherName": "Armina Akhand", "motherPhone": "9641458747", "motherWhatsapp": "9641458747", "village": "Hatpukuria", "postOffice": "Bhaleya", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 21:22:23"}, {"id": "110", "appId": "AMM202665661", "session": "2027", "applyingClass": "VI", "name": "Masuma Khatun", "gender": "Female", "caste": "General", "dob": "24/06/2016", "dobIso": "2016-06-24", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Masud Karim Molla", "fatherPhone": "9874339093", "fatherWhatsapp": "9874339093", "motherName": "Lutfa Bibi Molla", "motherPhone": "9874339093", "motherWhatsapp": "9874339093", "village": "Rashkhali", "postOffice": "Bishnupur", "policeStation": "Bishnupur", "district": "24 pgs (S)", "pinCode": "743503", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 20:59:13"}, {"id": "109", "appId": "AMM202655098", "session": "2027", "applyingClass": "VII", "name": "IRISHA AKHAND", "gender": "Female", "caste": "General", "dob": "22/09/2014", "dobIso": "2014-09-22", "bloodGroup": "B+", "schoolName": "SISHU BIKASH ACADEMY", "fatherName": "ESTIAK ALAM AKHAND", "fatherPhone": "6290016972", "fatherWhatsapp": "6290016972", "motherName": "ESMATARA KHATUN", "motherPhone": "6297123243", "motherWhatsapp": "6297123243", "village": "AMTALA", "postOffice": "AMTALA", "policeStation": "CANNING", "district": "SOUTH 24 PARGANAS", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-27 20:24:16"}, {"id": "108", "appId": "AMM202617387", "session": "2027", "applyingClass": "VII", "name": "Md Masum Mondal", "gender": "Male", "caste": "General", "dob": "07/09/2014", "dobIso": "2014-09-07", "bloodGroup": "A+", "schoolName": "Dakshin Barasat S.A.H.S", "fatherName": "Not Found", "fatherPhone": "9735707332", "fatherWhatsapp": "9732661866", "motherName": "Manoyara Bibi Mondal", "motherPhone": "9735707332", "motherWhatsapp": "9732661866", "village": "Padmarhat", "postOffice": "Dakshin Barasat", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 13:29:25"}, {"id": "107", "appId": "AMM202635507", "session": "2027", "applyingClass": "VI", "name": "Kazi Amir Hossain", "gender": "Male", "caste": "General", "dob": "09/04/2015", "dobIso": "2015-04-09", "bloodGroup": "A+", "schoolName": "Nobel Academy Mission", "fatherName": "Kazi Ali Hossain", "fatherPhone": "9874152607", "fatherWhatsapp": "9874152607", "motherName": "Kazi Habiba", "motherPhone": "9874152607", "motherWhatsapp": "9874152607", "village": "Salika Shyampur", "postOffice": "Maheshpur", "policeStation": "Magrahat", "district": "24 pgs (S)", "pinCode": "743355", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 13:20:31"}, {"id": "106", "appId": "AMM202661596", "session": "2027", "applyingClass": "VI", "name": "Imran Hosain Gayen", "gender": "Male", "caste": "General", "dob": "02/09/2015", "dobIso": "2015-09-02", "bloodGroup": "A+", "schoolName": "Jouthia Bowni Vidyapith(H.S)", "fatherName": "Nuralam Gayen", "fatherPhone": "7872108107", "fatherWhatsapp": "7450960894", "motherName": "Jahanara Gayen", "motherPhone": "7872108107", "motherWhatsapp": "7450960894", "village": "Baishata", "postOffice": "Baishata", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 13:17:15"}, {"id": "105", "appId": "AMM202640409", "session": "2027", "applyingClass": "VIII", "name": "Sahin Gazi", "gender": "Male", "caste": "General", "dob": "02/07/2013", "dobIso": "2013-07-02", "bloodGroup": "A+", "schoolName": "Jaynagar Instituition", "fatherName": "Hafijul Gazi", "fatherPhone": "9609253897", "fatherWhatsapp": "9609253897", "motherName": "Samima Gazi", "motherPhone": "9609253897", "motherWhatsapp": "9609253897", "village": "Fatepur", "postOffice": "Jaynagar Majilpur", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 13:11:14"}, {"id": "104", "appId": "AMM202655206", "session": "2027", "applyingClass": "VIII", "name": "Sairaj Molla", "gender": "Male", "caste": "General", "dob": "18/02/2013", "dobIso": "2013-02-18", "bloodGroup": "A+", "schoolName": "J.M Traning School", "fatherName": "Safik Ali Molla", "fatherPhone": "9002400152", "fatherWhatsapp": "7872966138", "motherName": "Renesha Molla", "motherPhone": "9002400152", "motherWhatsapp": "7872966138", "village": "Majilpur Uttarpara", "postOffice": "Jaynagar Majilpur", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 13:07:50"}, {"id": "103", "appId": "AMM202629530", "session": "2027", "applyingClass": "V", "name": "Jahid Dhali", "gender": "Male", "caste": "General", "dob": "21/01/2016", "dobIso": "2016-01-21", "bloodGroup": "A+", "schoolName": "Pancham Naamtola F.P", "fatherName": "Iyajaddin Dhali", "fatherPhone": "9609811947", "fatherWhatsapp": "9641563348", "motherName": "Jasmina Dhalia", "motherPhone": "9609811947", "motherWhatsapp": "9641563348", "village": "Koabati", "postOffice": "Koabati", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 12:45:39"}, {"id": "102", "appId": "AMM202681619", "session": "2027", "applyingClass": "V", "name": "Nasim Sardar", "gender": "Male", "caste": "General", "dob": "05/03/2016", "dobIso": "2016-03-05", "bloodGroup": "A+", "schoolName": "Dhankhali F.P", "fatherName": "Mahasin Sardar", "fatherPhone": "9732744111", "fatherWhatsapp": "9732744111", "motherName": "Najira Sardar", "motherPhone": "9732744111", "motherWhatsapp": "9732744111", "village": "Kirtankhola", "postOffice": "Kripakhali", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 12:42:15"}, {"id": "101", "appId": "AMM202664422", "session": "2027", "applyingClass": "V", "name": "Asif Halder", "gender": "Male", "caste": "General", "dob": "07/09/2016", "dobIso": "2016-09-07", "bloodGroup": "A+", "schoolName": "Shaikh Mollapara F.P School", "fatherName": "Amir Hossain Halder", "fatherPhone": "9378034996", "fatherWhatsapp": "9378034996", "motherName": "Ajmira Halder", "motherPhone": "9378034996", "motherWhatsapp": "9378034996", "village": "Chaltaberia", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 11:20:55"}, {"id": "100", "appId": "AMM202646305", "session": "2027", "applyingClass": "VII", "name": "Jabir Ahmad Mondal", "gender": "Male", "caste": "General", "dob": "10/10/2014", "dobIso": "2014-10-10", "bloodGroup": "A+", "schoolName": "Krishnachandra Pur School", "fatherName": "Jiyarul Mondal", "fatherPhone": "8250724071", "fatherWhatsapp": "8250724071", "motherName": "Muslima Mondal", "motherPhone": "8250724071", "motherWhatsapp": "8250724071", "village": "Katandighi", "postOffice": "Krishnachandra Pur", "policeStation": "Mathurapur", "district": "24 pgs (S)", "pinCode": "743354", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 11:16:49"}, {"id": "99", "appId": "AMM202671079", "session": "2027", "applyingClass": "VI", "name": "Md. Jonayed Mistry", "gender": "Male", "caste": "General", "dob": "02/05/2015", "dobIso": "2015-05-02", "bloodGroup": "A+", "schoolName": "Paschim Gabberia F.P School", "fatherName": "Md. Salam Mistry", "fatherPhone": "7407673662", "fatherWhatsapp": "7407673662", "motherName": "Jinnatun Mistry", "motherPhone": "7407673662", "motherWhatsapp": "7407673662", "village": "Bantra", "postOffice": "Bantra", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 11:13:15"}, {"id": "98", "appId": "AMM202692542", "session": "2027", "applyingClass": "V", "name": "Sk Md Imran", "gender": "Male", "caste": "General", "dob": "30/04/2016", "dobIso": "2016-04-30", "bloodGroup": "A+", "schoolName": "Dhankhali F.P School", "fatherName": "Sk Md Isa", "fatherPhone": "9732289217", "fatherWhatsapp": "9564045520", "motherName": "Sk Ssahida Begam", "motherPhone": "9732289217", "motherWhatsapp": "9564045520", "village": "Kirtankhola", "postOffice": "Kripakhali", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 08:59:23"}, {"id": "97", "appId": "AMM202695498", "session": "2027", "applyingClass": "IX", "name": "Ruhana Molla", "gender": "Female", "caste": "General", "dob": "12/04/2012", "dobIso": "2012-04-12", "bloodGroup": "A+", "schoolName": "sree ramkrishna shikkhya niketan", "fatherName": "Abdul Ajij Molla", "fatherPhone": "6289136278", "fatherWhatsapp": "6289136278", "motherName": "Rajiya Sultana", "motherPhone": "6289136278", "motherWhatsapp": "6289136278", "village": "Charabidya", "postOffice": "Charabidya", "policeStation": "Basanti", "district": "24 pgs (S)", "pinCode": "743329", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 08:53:58"}, {"id": "96", "appId": "AMM202677365", "session": "2027", "applyingClass": "VI", "name": "Afrin Najnin Khatun", "gender": "Female", "caste": "General", "dob": "16/05/2015", "dobIso": "2015-05-16", "bloodGroup": "A+", "schoolName": "S.S.B.V. School", "fatherName": "Alauddin Mondal", "fatherPhone": "9851551636", "fatherWhatsapp": "9851551636", "motherName": "Nazia Mondal", "motherPhone": "9851551636", "motherWhatsapp": "9851551636", "village": "Jangalia", "postOffice": "Punpua", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-27 08:49:05"}, {"id": "95", "appId": "AMM202675461", "session": "2027", "applyingClass": "VII", "name": "Rehana Sardar", "gender": "Female", "caste": "General", "dob": "21/01/2014", "dobIso": "2014-01-21", "bloodGroup": "A+", "schoolName": "Baruipur Girls High School", "fatherName": "Rahamatulla Sardar", "fatherPhone": "7432933340", "fatherWhatsapp": "7432933340", "motherName": "Anarkali Sardar", "motherPhone": "7810858914", "motherWhatsapp": "7810858914", "village": "Ratanpur", "postOffice": "Mirpur", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743610", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 21:07:55"}, {"id": "94", "appId": "AMM202678322", "session": "2027", "applyingClass": "V", "name": "Sifat Sardar", "gender": "Female", "caste": "General", "dob": "12/04/2017", "dobIso": "2017-04-12", "bloodGroup": "A+", "schoolName": "Jangalia F.P School", "fatherName": "Mithu Sardar", "fatherPhone": "8695732081", "fatherWhatsapp": "8695732081", "motherName": "Suraiya Bibi", "motherPhone": "8695732081", "motherWhatsapp": "8695732081", "village": "Jangalia", "postOffice": "Punpua", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 20:41:01"}, {"id": "93", "appId": "AMM202653435", "session": "2027", "applyingClass": "V", "name": "Riduyan Sardar", "gender": "Male", "caste": "General", "dob": "28/09/2016", "dobIso": "2016-09-28", "bloodGroup": "A+", "schoolName": "Jangalia F.P School", "fatherName": "Hamidur Rahaman Sardar", "fatherPhone": "9733941924", "fatherWhatsapp": "9733941924", "motherName": "Ajmina Bibi Sardar", "motherPhone": "9733941924", "motherWhatsapp": "9733941924", "village": "Jangalia", "postOffice": "Punpua", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 20:26:41"}, {"id": "92", "appId": "AMM202657011", "session": "2027", "applyingClass": "VIII", "name": "Arfina Kazi", "gender": "Female", "caste": "General", "dob": "11/03/2013", "dobIso": "2013-03-11", "bloodGroup": "A+", "schoolName": "Baharu Girls", "fatherName": "Mostakin Kazi", "fatherPhone": "7063708879", "fatherWhatsapp": "7063708879", "motherName": "Salma Kazi", "motherPhone": "7063708879", "motherWhatsapp": "7063708879", "village": "Uttarpara Nij", "postOffice": "Moydah", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 19:55:48"}, {"id": "91", "appId": "AMM202614113", "session": "2027", "applyingClass": "VII", "name": "Junait Gayen", "gender": "Male", "caste": "General", "dob": "11/11/2014", "dobIso": "2014-11-11", "bloodGroup": "A+", "schoolName": "Jaynagar Institution", "fatherName": "Nurammad Gayen", "fatherPhone": "7063727139", "fatherWhatsapp": "7063727139", "motherName": "Jasmina Gayen", "motherPhone": "7063727139", "motherWhatsapp": "7063727139", "village": "Fatepur", "postOffice": "Jaynagar Majilpur", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 19:47:51"}, {"id": "89", "appId": "AMM202622931", "session": "2027", "applyingClass": "V", "name": "Irsat Sekh", "gender": "Male", "caste": "General", "dob": "04/04/2016", "dobIso": "2016-04-04", "bloodGroup": "A+", "schoolName": "Alipur Suriyapur J.B School", "fatherName": "Sabir Sekh", "fatherPhone": "9143568814", "fatherWhatsapp": "9143568814", "motherName": "Aklima Sekh", "motherPhone": "9143568814", "motherWhatsapp": "9143568814", "village": "Bhatpoa", "postOffice": "Surjapur Hat", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 19:41:10"}, {"id": "88", "appId": "AMM202696087", "session": "2027", "applyingClass": "VII", "name": "Sahil Molla", "gender": "Male", "caste": "General", "dob": "16/02/2014", "dobIso": "2014-02-16", "bloodGroup": "A+", "schoolName": "Chaltaberia High School", "fatherName": "Md Abdulla Molla", "fatherPhone": "9679799855", "fatherWhatsapp": "9679799855", "motherName": "Safiunnesa Molla", "motherPhone": "9679799855", "motherWhatsapp": "9679799855", "village": "Chaltaberia", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 19:33:21"}, {"id": "87", "appId": "AMM202636953", "session": "2027", "applyingClass": "V", "name": "Salman Molla", "gender": "Male", "caste": "General", "dob": "06/09/2016", "dobIso": "2016-09-06", "bloodGroup": "A+", "schoolName": "Ramjane Alam Shishu Academy", "fatherName": "Momin Ali Molla", "fatherPhone": "9836073857", "fatherWhatsapp": "9836073857", "motherName": "Mabiya Bibi", "motherPhone": "9836073857", "motherWhatsapp": "9836073857", "village": "Devisabad", "postOffice": "Devisabad", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 13:40:32"}, {"id": "86", "appId": "AMM202640989", "session": "2027", "applyingClass": "V", "name": "Ishan Molla", "gender": "Male", "caste": "General", "dob": "17/08/2016", "dobIso": "2016-08-17", "bloodGroup": "A+", "schoolName": "Ramjane Alam Shishu Academy", "fatherName": "Soriful Islam Molla", "fatherPhone": "9647270364", "fatherWhatsapp": "9647270364", "motherName": "Raila Bibi Molla", "motherPhone": "9647270364", "motherWhatsapp": "9647270364", "village": "Devisabad", "postOffice": "Devisabad", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 13:37:02"}, {"id": "85", "appId": "AMM202698577", "session": "2027", "applyingClass": "IX", "name": "Jaseena Parvin", "gender": "Female", "caste": "General", "dob": "13/06/2012", "dobIso": "2012-06-13", "bloodGroup": "A+", "schoolName": "P.C Paul Instituition", "fatherName": "Jalal Uddin Sardar", "fatherPhone": "9647398705", "fatherWhatsapp": "9647398705", "motherName": "Mahitunnechha Sardar", "motherPhone": "9647398705", "motherWhatsapp": "9647398705", "village": "Marapia", "postOffice": "Devisabad", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 13:33:51"}, {"id": "84", "appId": "AMM202617521", "session": "2027", "applyingClass": "V", "name": "Md. Affif Sardar", "gender": "Male", "caste": "General", "dob": "04/11/2015", "dobIso": "2015-11-04", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Md Morchhalim Sardar", "fatherPhone": "7098742751", "fatherWhatsapp": "7098742751", "motherName": "Not Mentioned", "motherPhone": "7098742751", "motherWhatsapp": "7098742751", "village": "Tilpi", "postOffice": "Tilpi", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 13:12:51"}, {"id": "83", "appId": "AMM202674478", "session": "2027", "applyingClass": "VIII", "name": "Arif Laskar", "gender": "Male", "caste": "General", "dob": "13/05/2013", "dobIso": "2013-05-13", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Abul Kalam Lsakar", "fatherPhone": "7863955853", "fatherWhatsapp": "7863955853", "motherName": "Mot Mentioned", "motherPhone": "7863955853", "motherWhatsapp": "7863955853", "village": "Tilpi", "postOffice": "Tilpi", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-26 13:09:21"}, {"id": "82", "appId": "AMM202624281", "session": "2027", "applyingClass": "VI", "name": "SAHIN GHARAMI", "gender": "Male", "caste": "General", "dob": "10/12/2015", "dobIso": "2015-12-10", "bloodGroup": "B+", "schoolName": "MERIGUNJ HIGH MADRASAH", "fatherName": "CHHABIR HOSEN GHARAMI", "fatherPhone": "9830619730", "fatherWhatsapp": "9830619730", "motherName": "FIROJA GHARAMI", "motherPhone": "9830619730", "motherWhatsapp": "9830619730", "village": "MERIGUNJ", "postOffice": "MERIGUNJ", "policeStation": "KULTALI", "district": "SOUTH 24 PARGANAS", "pinCode": "743329", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-26 09:06:26"}, {"id": "81", "appId": "AMM202646551", "session": "2027", "applyingClass": "VI", "name": "SADIK GAYEN", "gender": "Male", "caste": "General", "dob": "04/09/2015", "dobIso": "2015-09-04", "bloodGroup": "B+", "schoolName": "MERIGUNJ HIGH MADRASAH", "fatherName": "MAHIUDDIN GAYEN", "fatherPhone": "8001094635", "fatherWhatsapp": "8001094635", "motherName": "SERINA GAYEN", "motherPhone": "9733648362", "motherWhatsapp": "9733648362", "village": "KIRTANKHOLA", "postOffice": "KRIPAKHALI", "policeStation": "KULTALI", "district": "SOUTH 24 PARGANAS", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-26 08:54:54"}, {"id": "80", "appId": "AMM202675906", "session": "2027", "applyingClass": "VI", "name": "SOHEL RANA DHALI", "gender": "Male", "caste": "General", "dob": "08/12/2015", "dobIso": "2015-12-08", "bloodGroup": "B+", "schoolName": "MERIGUNJ HIGH MADRASAH", "fatherName": "HABIBUR RAHAMAN DHALI", "fatherPhone": "9933887080", "fatherWhatsapp": "9933887080", "motherName": "MONIRA PARVIN DHALI", "motherPhone": "8001758968", "motherWhatsapp": "8001758968", "village": "KIRTANKHOLA", "postOffice": "KRIPAKHALI", "policeStation": "KULTALI", "district": "SOUTH 24 PARGANAS", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-25 20:42:24"}, {"id": "79", "appId": "AMM202669783", "session": "2027", "applyingClass": "V", "name": "Raima Parvin", "gender": "Female", "caste": "General", "dob": "24/06/2016", "dobIso": "2016-06-24", "bloodGroup": "A+", "schoolName": "Darag Shishu Path Bhaban", "fatherName": "Babulal Halder", "fatherPhone": "9163376400", "fatherWhatsapp": "9163376400", "motherName": "Lipika Khatun", "motherPhone": "9163376400", "motherWhatsapp": "9163376400", "village": "Bahir Gachi", "postOffice": "Usthi", "policeStation": "Usthi", "district": "24 pgs (S)", "pinCode": "743375", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 19:02:20"}, {"id": "78", "appId": "AMM202637244", "session": "2027", "applyingClass": "V", "name": "Nadav Arbazz Khan", "gender": "Male", "caste": "General", "dob": "05/10/2015", "dobIso": "2015-10-05", "bloodGroup": "A+", "schoolName": "Mahamaya K.G8 Nursery School", "fatherName": "Enamul Haque Khan", "fatherPhone": "8509968682", "fatherWhatsapp": "8509968682", "motherName": "Syeda Nasrin Parvin", "motherPhone": "8509968682", "motherWhatsapp": "8509968682", "village": "Jahangir Gar", "postOffice": "Kinsilly", "policeStation": "Usthi", "district": "24 pgs (S)", "pinCode": "743375", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 18:59:00"}, {"id": "77", "appId": "AMM202623572", "session": "2027", "applyingClass": "V", "name": "Nishan Arbazz Khan", "gender": "Male", "caste": "General", "dob": "20/03/2017", "dobIso": "2017-03-20", "bloodGroup": "A+", "schoolName": "Mahamaya K.G8 Nursery School", "fatherName": "Enamul Haque Khan", "fatherPhone": "8509968682", "fatherWhatsapp": "8509968682", "motherName": "Syeda Nasrin Parvin", "motherPhone": "8509968682", "motherWhatsapp": "8509968682", "village": "Jahangir Gar", "postOffice": "Kinsilly", "policeStation": "Usthi", "district": "24 pgs (S)", "pinCode": "743375", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 18:55:01"}, {"id": "76", "appId": "AMM202636060", "session": "2027", "applyingClass": "VI", "name": "Aksara Parvin", "gender": "Female", "caste": "General", "dob": "24/10/2015", "dobIso": "2015-10-24", "bloodGroup": "A+", "schoolName": "Medhabikash Mission", "fatherName": "Md Aktar Hossain Laksar", "fatherPhone": "9733841223", "fatherWhatsapp": "9733841223", "motherName": "Aliya Bibi", "motherPhone": "9733841223", "motherWhatsapp": "9733841223", "village": "Kuleshwar", "postOffice": "Kuleshwar", "policeStation": "Diamond Harbour", "district": "24 pgs (S)", "pinCode": "743375", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 18:47:54"}, {"id": "75", "appId": "AMM202694810", "session": "2027", "applyingClass": "V", "name": "Aliviya Molla", "gender": "Female", "caste": "General", "dob": "24/09/2016", "dobIso": "2016-09-24", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Md Saddam Hossain Molla", "fatherPhone": "8927651458", "fatherWhatsapp": "9088653883", "motherName": "Salma Molla", "motherPhone": "8927651458", "motherWhatsapp": "9088653883", "village": "Madhya Belegachi", "postOffice": "Belegachi", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 17:53:09"}, {"id": "74", "appId": "AMM202673643", "session": "2027", "applyingClass": "VIII", "name": "Masuma Laskar", "gender": "Female", "caste": "General", "dob": "02/10/2013", "dobIso": "2013-10-02", "bloodGroup": "A+", "schoolName": "Jaynagar Instituition", "fatherName": "Mahasin Laskar", "fatherPhone": "7431830770", "fatherWhatsapp": "9732449959", "motherName": "Taslima Laskar", "motherPhone": "7431830770", "motherWhatsapp": "9732449959", "village": "Fatepur", "postOffice": "Jaynagar Majilpur", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 17:40:37"}, {"id": "73", "appId": "AMM202688700", "session": "2027", "applyingClass": "VI", "name": "Jinat Sardar", "gender": "Female", "caste": "General", "dob": "17/02/2015", "dobIso": "2015-02-17", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Raju Sardar", "fatherPhone": "8348650832", "fatherWhatsapp": "8348650832", "motherName": "Mamtaj Bibi", "motherPhone": "8348650832", "motherWhatsapp": "8348650832", "village": "Madhya Belegachi", "postOffice": "Belegachi", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 17:29:34"}, {"id": "72", "appId": "AMM202632877", "session": "2027", "applyingClass": "VIII", "name": "Imraj Khan", "gender": "Male", "caste": "General", "dob": "29/11/2013", "dobIso": "2013-11-29", "bloodGroup": "A+", "schoolName": "Udayrampur J.K.V.N", "fatherName": "Mustak Ahamed Khan", "fatherPhone": "9775128871", "fatherWhatsapp": "8617552381", "motherName": "Nurjahan Khan", "motherPhone": "9775128871", "motherWhatsapp": "8617552381", "village": "Bularchak", "postOffice": "Anowar Pur", "policeStation": "Kulpi", "district": "24 pgs (S)", "pinCode": "743336", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 17:11:40"}, {"id": "71", "appId": "AMM202645813", "session": "2027", "applyingClass": "VII", "name": "HALIMA LASKAR", "gender": "Female", "caste": "General", "dob": "13/08/2014", "dobIso": "2014-08-13", "bloodGroup": "B+", "schoolName": "HARINBATI MSK SCHOOL", "fatherName": "HASANUR JAMAN LASKAR", "fatherPhone": "8976859727", "fatherWhatsapp": "8976859727", "motherName": "KHADIJA LASKAR", "motherPhone": "6297314985", "motherWhatsapp": "6297314985", "village": "KALIKAPUR", "postOffice": "BOHALBERIA", "policeStation": "MANDIR BAZAR", "district": "SOUTH 24 PARGANAS", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-23 17:03:49"}, {"id": "70", "appId": "AMM202687820", "session": "2027", "applyingClass": "V", "name": "Farhin Zamadar", "gender": "Female", "caste": "General", "dob": "17/04/2016", "dobIso": "2016-04-17", "bloodGroup": "A+", "schoolName": "Jamtla Adarsha Nursery School", "fatherName": "Rafikul Hasan Zamadar", "fatherPhone": "9734803781", "fatherWhatsapp": "9734803781", "motherName": "Najima Zamadar", "motherPhone": "9734803781", "motherWhatsapp": "9734803781", "village": "Dighir Par", "postOffice": "Naskar Para", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 17:00:54"}, {"id": "69", "appId": "AMM202654717", "session": "2027", "applyingClass": "IX", "name": "Sohel Molla", "gender": "Male", "caste": "General", "dob": "15/12/2012", "dobIso": "2012-12-15", "bloodGroup": "A+", "schoolName": "Chaltaberia H.S", "fatherName": "Samsul Molla", "fatherPhone": "8670297260", "fatherWhatsapp": "8670297260", "motherName": "Sahanaj Molla", "motherPhone": "8670297260", "motherWhatsapp": "8670297260", "village": "Ulurdanri", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 16:42:21"}, {"id": "68", "appId": "AMM202624916", "session": "2027", "applyingClass": "VI", "name": "Ahil Molla", "gender": "Male", "caste": "General", "dob": "01/01/2015", "dobIso": "2015-01-01", "bloodGroup": "A+", "schoolName": "Uttarbhag F.P School", "fatherName": "Mofajjel Molla", "fatherPhone": "7908780387", "fatherWhatsapp": "7908780387", "motherName": "Saniya Molla", "motherPhone": "7908780387", "motherWhatsapp": "7908780387", "village": "Chakrabarti Abad", "postOffice": "Uttarbhag Bridge", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743387", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 16:34:24"}, {"id": "67", "appId": "AMM202613300", "session": "2027", "applyingClass": "V", "name": "Ayaz Sardar", "gender": "Male", "caste": "General", "dob": "29/11/2016", "dobIso": "2016-11-29", "bloodGroup": "A+", "schoolName": "Joyanpur F.P School", "fatherName": "Jahangir Sardar", "fatherPhone": "9647469948", "fatherWhatsapp": "9647469948", "motherName": "Amina Khatun", "motherPhone": "9647469948", "motherWhatsapp": "9647469948", "village": "Bahiragachi", "postOffice": "Usthi", "policeStation": "Usthi", "district": "24 pgs (S)", "pinCode": "743375", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 16:26:19"}, {"id": "66", "appId": "AMM202624661", "session": "2027", "applyingClass": "VI", "name": "Afruja Laskar", "gender": "Female", "caste": "General", "dob": "19/09/2015", "dobIso": "2015-09-19", "bloodGroup": "A+", "schoolName": "Pancuakhali H.S", "fatherName": "Alamgir Laskar", "fatherPhone": "8327680093", "fatherWhatsapp": "8327680093", "motherName": "Fatema Bibi Laskar", "motherPhone": "8327680093", "motherWhatsapp": "8327680093", "village": "Koabati", "postOffice": "Koabati", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 16:10:30"}, {"id": "65", "appId": "AMM202657897", "session": "2027", "applyingClass": "VIII", "name": "Sakiba Mondal", "gender": "Female", "caste": "General", "dob": "21/08/2013", "dobIso": "2013-08-21", "bloodGroup": "A+", "schoolName": "Kantamari Churamoni High School", "fatherName": "Mofizuddin Mondal", "fatherPhone": "9836289505", "fatherWhatsapp": "9836289505", "motherName": "Suraiya Mondal", "motherPhone": "9836289505", "motherWhatsapp": "9836289505", "village": "Dakshin Durgapur", "postOffice": "Dakshin Durgapur", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743349", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 16:01:23"}, {"id": "64", "appId": "AMM202646170", "session": "2027", "applyingClass": "V", "name": "Maimuna Gharami", "gender": "Female", "caste": "General", "dob": "03/09/2016", "dobIso": "2016-09-03", "bloodGroup": "A+", "schoolName": "Ramjane Alam Shishu Academy", "fatherName": "Mainul Gharami", "fatherPhone": "8250407123", "fatherWhatsapp": "8250407123", "motherName": "Tanuja Laskar", "motherPhone": "8250407123", "motherWhatsapp": "8250407123", "village": "Hatpukuria", "postOffice": "Bhaleya", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 15:38:33"}, {"id": "63", "appId": "AMM202632674", "session": "2027", "applyingClass": "VII", "name": "Mubassira Gharami", "gender": "Female", "caste": "General", "dob": "17/05/2014", "dobIso": "2014-05-17", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Monjur Alam Gharami", "fatherPhone": "9593085121", "fatherWhatsapp": "9593085121", "motherName": "Zubaida Parvin Gharami", "motherPhone": "9593085121", "motherWhatsapp": "9593085121", "village": "Devisabad", "postOffice": "Devisabad", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 15:28:30"}, {"id": "62", "appId": "AMM202689134", "session": "2027", "applyingClass": "IX", "name": "Tania Molla", "gender": "Female", "caste": "General", "dob": "27/11/2012", "dobIso": "2012-11-27", "bloodGroup": "A+", "schoolName": "Jugdia High Madrasah", "fatherName": "Asrat Ali Molla", "fatherPhone": "8327360529", "fatherWhatsapp": "8327360529", "motherName": "Rehena Molla", "motherPhone": "8327360529", "motherWhatsapp": "8327360529", "village": "Harinarayanpur", "postOffice": "Gorerhat", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 15:20:27"}, {"id": "61", "appId": "AMM202637046", "session": "2027", "applyingClass": "VII", "name": "Afrah Sultana Naiya", "gender": "Female", "caste": "General", "dob": "26/12/2014", "dobIso": "2014-12-26", "bloodGroup": "A+", "schoolName": "Jamptala H.S", "fatherName": "Altab Hossain Naiya", "fatherPhone": "9903185607", "fatherWhatsapp": "9064721839", "motherName": "Mafuja Naiya", "motherPhone": "9903185607", "motherWhatsapp": "9064721839", "village": "Kunda Khali", "postOffice": "Jamptala", "policeStation": "3", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 15:09:08"}, {"id": "60", "appId": "AMM202677060", "session": "2027", "applyingClass": "V", "name": "Safiya Najiya", "gender": "Female", "caste": "General", "dob": "02/02/2016", "dobIso": "2016-02-02", "bloodGroup": "A+", "schoolName": "Chuna Pukur F.P School", "fatherName": "Matiur Rahaman Naiyaa", "fatherPhone": "8017833101", "fatherWhatsapp": "7044225056", "motherName": "Mohima Naiya", "motherPhone": "8017833101", "motherWhatsapp": "7044225056", "village": "Chuna Pukur", "postOffice": "Gardewani", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 14:27:29"}, {"id": "59", "appId": "AMM202628951", "session": "2027", "applyingClass": "VI", "name": "Rumana Sekh", "gender": "Female", "caste": "General", "dob": "08/05/2015", "dobIso": "2015-05-08", "bloodGroup": "A+", "schoolName": "Kirtankhola F.P School", "fatherName": "Manirul Sekh", "fatherPhone": "8695440692", "fatherWhatsapp": "8695440692", "motherName": "Rosida Sekh", "motherPhone": "8695440692", "motherWhatsapp": "8695440692", "village": "Kirtankhola", "postOffice": "Kripakhali", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 14:08:40"}, {"id": "58", "appId": "AMM202677987", "session": "2027", "applyingClass": "VI", "name": "Nusrat Parvin", "gender": "Female", "caste": "General", "dob": "19/08/2015", "dobIso": "2015-08-19", "bloodGroup": "A+", "schoolName": "Kuldia Mohanpur High Madrasha", "fatherName": "Abdul Latif Sekh", "fatherPhone": "9733633404", "fatherWhatsapp": "9733633404", "motherName": "Najima Bibi Sekh", "motherPhone": "9733633404", "motherWhatsapp": "9733633404", "village": "Kuldia", "postOffice": "Kuldia", "policeStation": "Magrahat", "district": "24 pgs (S)", "pinCode": "743609", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 13:55:24"}, {"id": "57", "appId": "AMM202674141", "session": "2027", "applyingClass": "VI", "name": "Sifat Sultana", "gender": "Female", "caste": "General", "dob": "30/12/2015", "dobIso": "2015-12-30", "bloodGroup": "A+", "schoolName": "Kalash F.P School", "fatherName": "Selim Laskar", "fatherPhone": "7905474953", "fatherWhatsapp": "9046227677", "motherName": "Rukaiya Bibi", "motherPhone": "7905474953", "motherWhatsapp": "9046227677", "village": "Uttar Kalash", "postOffice": "Kalash", "policeStation": "Magrahat", "district": "24 pgs (S)", "pinCode": "743609", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 13:34:16"}, {"id": "56", "appId": "AMM202697930", "session": "2027", "applyingClass": "VI", "name": "Samim Laskar", "gender": "Male", "caste": "General", "dob": "31/01/2015", "dobIso": "2015-01-31", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Kader Ali Laskar", "fatherPhone": "9564582564", "fatherWhatsapp": "9564582564", "motherName": "Samsunnahar Laskar", "motherPhone": "8697246756", "motherWhatsapp": "8697246756", "village": "Taltala", "postOffice": "Taltala", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-23 12:12:06"}, {"id": "55", "appId": "AMM202628412", "session": "2027", "applyingClass": "IX", "name": "SAODA MONDAL", "gender": "Female", "caste": "General", "dob": "02/06/2012", "dobIso": "2012-06-02", "bloodGroup": "A+", "schoolName": "GARDEWANI HIGH SCHOOL", "fatherName": "SHAFIQUR RAHMAN MONDAL", "fatherPhone": "7872746041", "fatherWhatsapp": "7872746041", "motherName": "MURSIDA MONDAL", "motherPhone": "7872746041", "motherWhatsapp": "7872746041", "village": "Thakurchak", "postOffice": "Thakurchak", "policeStation": "Bakultala", "district": "South 24 parganas", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-23 10:11:35"}, {"id": "54", "appId": "AMM202638906", "session": "2027", "applyingClass": "IX", "name": "SYED SHAHEEN SHAH", "gender": "Male", "caste": "General", "dob": "30/06/2012", "dobIso": "2012-06-30", "bloodGroup": "O+", "schoolName": "MATHURAPUR MUSALMANPARA RAHAMANIA Sr. MADRASAH TYPE", "fatherName": "SYED BARKAT ULLAH", "fatherPhone": "9733652148", "fatherWhatsapp": "9733652148", "motherName": "SAHANA KHATUN", "motherPhone": "8371850180", "motherWhatsapp": "8371850180", "village": "ADAKPARA", "postOffice": "KAUTALA", "policeStation": "RAIDIGHI", "district": "SOUTH 24 PARGANAS", "pinCode": "743349", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-20 11:26:17"}, {"id": "53", "appId": "AMM202654903", "session": "2027", "applyingClass": "VI", "name": "MAHABUBA SEKH", "gender": "Female", "caste": "General", "dob": "27/11/2015", "dobIso": "2015-11-27", "bloodGroup": "B+", "schoolName": "MERIGUNJ HIGH MADRASAH", "fatherName": "ASIKUR RAHAMAN SEKH", "fatherPhone": "7031547489", "fatherWhatsapp": "7031547489", "motherName": "NAZIRA SEKH", "motherPhone": "7031547489", "motherWhatsapp": "7031547489", "village": "MAHISMARI", "postOffice": "KRIPAKHALI", "policeStation": "JOYNAGAR", "district": "SOUTH 24 PARGANAS", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-20 10:35:37"}, {"id": "52", "appId": "AMM202642816", "session": "2027", "applyingClass": "VI", "name": "CHHAMIYA SHAH", "gender": "Female", "caste": "General", "dob": "06/05/2015", "dobIso": "2015-05-06", "bloodGroup": "B+", "schoolName": "NR NATIONAL ACADEMY", "fatherName": "HEDAYATULLAH SHAH", "fatherPhone": "8759659737", "fatherWhatsapp": "8759659737", "motherName": "AFRUZA SHAH", "motherPhone": "8759659737", "motherWhatsapp": "8759659737", "village": "PURBA SANKARPUR", "postOffice": "DHOLAHAT", "policeStation": "DHOLAHAT", "district": "SOUTH 24-PARGANAS", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-18 20:12:32"}, {"id": "51", "appId": "AMM202619341", "session": "2027", "applyingClass": "VII", "name": "JUNAID MOLLA", "gender": "Male", "caste": "General", "dob": "25/08/2014", "dobIso": "2014-08-25", "bloodGroup": "B+", "schoolName": "PURNACHANDRAPUR CHANDMANI SHIKSHAVABAN", "fatherName": "SAFIUDDIN MOLLA", "fatherPhone": "9733339691", "fatherWhatsapp": "9733339691", "motherName": "JASMINE BIBI MOLLA", "motherPhone": "9733339691", "motherWhatsapp": "9733339691", "village": "DAKSHIN MADHUSUDANPUR", "postOffice": "MALAYA", "policeStation": "DHOLA HAT", "district": "SOUTH 24-PARGANAS", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-15 18:46:58"}, {"id": "50", "appId": "AMM202643844", "session": "2027", "applyingClass": "V", "name": "MD AFIF SARDAR", "gender": "Male", "caste": "General", "dob": "04/11/2015", "dobIso": "2015-11-04", "bloodGroup": "A+", "schoolName": "TIPI J M BRANCH FREE PRIMARY SCHOOL", "fatherName": "MD MORCHHALIM SARDA", "fatherPhone": "7098742751", "fatherWhatsapp": "7098742751", "motherName": "ASMINA KHATUN", "motherPhone": "0000000000", "motherWhatsapp": "0000000000", "village": "Tilpi", "postOffice": "Tilpi", "policeStation": "Jaynagar", "district": "South 24 Parganas", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-15 05:35:38"}, {"id": "49", "appId": "AMM202633882", "session": "2027", "applyingClass": "V", "name": "Alina Sardar", "gender": "Female", "caste": "General", "dob": "01/01/2017", "dobIso": "2017-01-01", "bloodGroup": "A+", "schoolName": "Mirpur F.P School", "fatherName": "Aktar Uddin Sardar", "fatherPhone": "6291690309", "fatherWhatsapp": "6291690309", "motherName": "Rozina Sardar", "motherPhone": "6291690309", "motherWhatsapp": "6291690309", "village": "Mirpur", "postOffice": "Daulatpur", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743610", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-14 17:59:29"}, {"id": "48", "appId": "AMM202657044", "session": "2027", "applyingClass": "V", "name": "Ansariya Mandal", "gender": "Female", "caste": "General", "dob": "23/04/2016", "dobIso": "2016-04-23", "bloodGroup": "A+", "schoolName": "Kirtankhola F.P School", "fatherName": "Abul Ahad Moandal", "fatherPhone": "7872338228", "fatherWhatsapp": "7872338228", "motherName": "Murshida Mondal", "motherPhone": "7872338228", "motherWhatsapp": "7872338228", "village": "Kirtankhola", "postOffice": "Kripakhali", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-14 17:52:19"}, {"id": "47", "appId": "AMM202649889", "session": "2027", "applyingClass": "VI", "name": "Reema Molla", "gender": "Female", "caste": "General", "dob": "08/03/2015", "dobIso": "2015-03-08", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Aminuddin Molla", "fatherPhone": "9749293594", "fatherWhatsapp": "9749293594", "motherName": "Sakila Molla", "motherPhone": "9749293594", "motherWhatsapp": "9749293594", "village": "Kirtankhola", "postOffice": "Kripakhali", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-14 17:28:45"}, {"id": "46", "appId": "AMM202671294", "session": "2027", "applyingClass": "VI", "name": "Maskura Khan", "gender": "Female", "caste": "General", "dob": "24/06/2015", "dobIso": "2015-06-24", "bloodGroup": "A+", "schoolName": "Kaikhali Gopalganj H.S", "fatherName": "Mahiuddin Khan", "fatherPhone": "9091151468", "fatherWhatsapp": "9091151468", "motherName": "Nurunnechha Khan", "motherPhone": "9091151468", "motherWhatsapp": "9091151468", "village": "Gopalganj", "postOffice": "Gopalganj Hat", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-14 17:25:28"}, {"id": "45", "appId": "AMM202613029", "session": "2027", "applyingClass": "IX", "name": "Ruksa Khatun", "gender": "Female", "caste": "General", "dob": "10/12/2012", "dobIso": "2012-12-10", "bloodGroup": "A+", "schoolName": "Madar Hat Ishan Chandra Balika Vidyalaya", "fatherName": "Nurulhaque Mondal", "fatherPhone": "8910382072", "fatherWhatsapp": "8910382072", "motherName": "Rokeya Bibi", "motherPhone": "8240112109", "motherWhatsapp": "8240112109", "village": "Sitakundu", "postOffice": "Sitakundu", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743387", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-14 11:09:25"}, {"id": "44", "appId": "AMM202683609", "session": "2027", "applyingClass": "IX", "name": "Suhana Parvin Mondal", "gender": "Female", "caste": "General", "dob": "01/06/2012", "dobIso": "2012-06-01", "bloodGroup": "A+", "schoolName": "Dariya J.L.N Vidyalaya H.S", "fatherName": "Mosarraf Mondal", "fatherPhone": "7602043974", "fatherWhatsapp": "7602043974", "motherName": "Sabila Mondal", "motherPhone": "7602043974", "motherWhatsapp": "7602043974", "village": "Uttar Devisabad", "postOffice": "Uttar Devisabad", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-11 21:10:52"}, {"id": "43", "appId": "AMM202624711", "session": "2027", "applyingClass": "VI", "name": "Sk Mehreen", "gender": "Female", "caste": "General", "dob": "23/04/2014", "dobIso": "2014-04-23", "bloodGroup": "A+", "schoolName": "Baharu Balika F.P School", "fatherName": "Sk Miron", "fatherPhone": "9046636813", "fatherWhatsapp": "9046636813", "motherName": "Sk Sarwari", "motherPhone": "9046636813", "motherWhatsapp": "9046636813", "village": "Uttar Para Nij", "postOffice": "Moydah", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-11 21:04:14"}, {"id": "42", "appId": "AMM202666728", "session": "2027", "applyingClass": "VI", "name": "Tamanna Molla", "gender": "Female", "caste": "General", "dob": "17/02/2015", "dobIso": "2015-02-17", "bloodGroup": "A+", "schoolName": "Shaikh Molla Para F.P School", "fatherName": "Jiyaul Haque Molya", "fatherPhone": "9732507417", "fatherWhatsapp": "9732507417", "motherName": "Alema Molla", "motherPhone": "9732507417", "motherWhatsapp": "9732507417", "village": "Chaltaberia", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-11 20:41:19"}, {"id": "41", "appId": "AMM202656311", "session": "2027", "applyingClass": "V", "name": "Mosammat Ruhani Molla", "gender": "Female", "caste": "General", "dob": "29/11/2015", "dobIso": "2015-11-29", "bloodGroup": "A+", "schoolName": "Modern Children Academy", "fatherName": "Sahabuddin Molla", "fatherPhone": "8479805778", "fatherWhatsapp": "8479805778", "motherName": "Serina Bibi", "motherPhone": "8479805778", "motherWhatsapp": "8479805778", "village": "Kamaria", "postOffice": "Kamaria", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-11 20:31:26"}, {"id": "40", "appId": "AMM202635518", "session": "2027", "applyingClass": "V", "name": "Tamanna Gazi", "gender": "Female", "caste": "General", "dob": "04/01/2016", "dobIso": "2016-01-04", "bloodGroup": "A+", "schoolName": "Monittot F.P School", "fatherName": "Hasan Gazi", "fatherPhone": "8514987620", "fatherWhatsapp": "8514987620", "motherName": "Nazima Gazi", "motherPhone": "8514987620", "motherWhatsapp": "8514987620", "village": "Monittot 9 No", "postOffice": "Monittot", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743349", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-11 20:27:29"}, {"id": "39", "appId": "AMM202638991", "session": "2027", "applyingClass": "V", "name": "ZULAIKHA RAJ", "gender": "Female", "caste": "General", "dob": "29/12/2016", "dobIso": "2016-12-29", "bloodGroup": "A+", "schoolName": "Chhoto Ghoradol F.P School", "fatherName": "Rahamatullah Raj", "fatherPhone": "9735764088", "fatherWhatsapp": "9609187006", "motherName": "Eedarotananechha Raj", "motherPhone": "9735764088", "motherWhatsapp": "9609187006", "village": "Dahakanda", "postOffice": "Dahakanda", "policeStation": "Mathurapur", "district": "24 pgs (S)", "pinCode": "743354", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-11 20:22:42"}, {"id": "38", "appId": "AMM202689844", "session": "2027", "applyingClass": "V", "name": "Afrin Khatun", "gender": "Female", "caste": "General", "dob": "06/03/2016", "dobIso": "2016-03-06", "bloodGroup": "A+", "schoolName": "Nabaday School", "fatherName": "Imran Hossain", "fatherPhone": "9674477650", "fatherWhatsapp": "9674477650", "motherName": "Naj Munnahara Bibi", "motherPhone": "9674477650", "motherWhatsapp": "9674477650", "village": "Ganesh Pur", "postOffice": "Mollick Pur", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "700145", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-11 20:17:46"}, {"id": "37", "appId": "AMM202662130", "session": "2027", "applyingClass": "V", "name": "Sayeba Gazi", "gender": "Female", "caste": "General", "dob": "18/04/2016", "dobIso": "2016-04-18", "bloodGroup": "A+", "schoolName": "Modern Children Academy", "fatherName": "Habibuddin Gazi", "fatherPhone": "6295021355", "fatherWhatsapp": "8681044536", "motherName": "Tajmira Gazi", "motherPhone": "6295021355", "motherWhatsapp": "8681044536", "village": "Chaltaberia", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:50:26"}, {"id": "36", "appId": "AMM202666451", "session": "2027", "applyingClass": "V", "name": "Sahanaj Molla", "gender": "Female", "caste": "General", "dob": "20/04/2016", "dobIso": "2016-04-20", "bloodGroup": "A+", "schoolName": "Modern Children Academy", "fatherName": "Saidul Islam Molla", "fatherPhone": "8509150935", "fatherWhatsapp": "8509130935", "motherName": "Monowara Molla", "motherPhone": "8509150935", "motherWhatsapp": "8509150935", "village": "Chaltaberia", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:46:20"}, {"id": "35", "appId": "AMM202696023", "session": "2027", "applyingClass": "IX", "name": "Juhina Mallick", "gender": "Female", "caste": "General", "dob": "08/12/2012", "dobIso": "2012-12-08", "bloodGroup": "A+", "schoolName": "Udayrampur J.K.V.N", "fatherName": "Jamir Uddin Mallick", "fatherPhone": "7407508429", "fatherWhatsapp": "6296675325", "motherName": "Bilkis Mallick", "motherPhone": "7407508429", "motherWhatsapp": "6296675325", "village": "Bular Chak", "postOffice": "Anowar Pur", "policeStation": "Kulpi", "district": "24 pgs (S)", "pinCode": "743336", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:42:18"}, {"id": "34", "appId": "AMM202693282", "session": "2027", "applyingClass": "VIII", "name": "Ariyan Molla", "gender": "Female", "caste": "General", "dob": "05/05/2012", "dobIso": "2012-05-05", "bloodGroup": "A+", "schoolName": "Muktakeshi Gour Mohan Das H.S", "fatherName": "Aminuddin Molla", "fatherPhone": "8640832409", "fatherWhatsapp": "8640832409", "motherName": "Sahana Bibi Molla", "motherPhone": "8640832409", "motherWhatsapp": "8640832409", "village": "Jangalia", "postOffice": "Punpua", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:37:46"}, {"id": "33", "appId": "AMM202691760", "session": "2027", "applyingClass": "VIII", "name": "Afsana Parvin", "gender": "Female", "caste": "General", "dob": "11/05/2013", "dobIso": "2013-05-11", "bloodGroup": "A+", "schoolName": "Monirtot High School", "fatherName": "Sk Aftab Uddun", "fatherPhone": "9433573655", "fatherWhatsapp": "9433573655", "motherName": "Rojina Bibi", "motherPhone": "9433573655", "motherWhatsapp": "9433573655", "village": "Sekendar Pur", "postOffice": "Sherpur", "policeStation": "Usthi", "district": "24 pgs (S)", "pinCode": "743513", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:33:41"}, {"id": "32", "appId": "AMM202621285", "session": "2027", "applyingClass": "VII", "name": "Asifa Khatun", "gender": "Female", "caste": "General", "dob": "24/05/2014", "dobIso": "2014-05-24", "bloodGroup": "A+", "schoolName": "Monirtat Madhyamik Shiksha", "fatherName": "Abir Hossain Laskar", "fatherPhone": "7047780035", "fatherWhatsapp": "7047780035", "motherName": "JASMINA BIBI LASKAR", "motherPhone": "7047780035", "motherWhatsapp": "7047780035", "village": "Kamdebpur", "postOffice": "Gokarnee", "policeStation": "Magrahat", "district": "24 pgs (S)", "pinCode": "743355", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:26:28"}, {"id": "31", "appId": "AMM202645911", "session": "2027", "applyingClass": "VIII", "name": "Maharunnesa Khatun", "gender": "Female", "caste": "General", "dob": "30/06/2013", "dobIso": "2013-06-30", "bloodGroup": "A+", "schoolName": "M.G.D High School", "fatherName": "Mojaffor Mondal", "fatherPhone": "9564715655", "fatherWhatsapp": "7872458439", "motherName": "ROSHIDA BIBI MONDAL", "motherPhone": "9564715655", "motherWhatsapp": "7872458439", "village": "Jangalia", "postOffice": "Punpua", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:22:20"}, {"id": "30", "appId": "AMM202661620", "session": "2027", "applyingClass": "VIII", "name": "Sabnam Mondal", "gender": "Female", "caste": "General", "dob": "24/06/2013", "dobIso": "2013-06-24", "bloodGroup": "A+", "schoolName": "Nimpith Ashram Sarada Vidyamandir", "fatherName": "Sujauddin Mondal", "fatherPhone": "8918320890", "fatherWhatsapp": "8918320890", "motherName": "Sarikabanu Mondal", "motherPhone": "8918320890", "motherWhatsapp": "8918320890", "village": "Purba Raghunath Pur", "postOffice": "Khola Khali Hat", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:17:40"}, {"id": "29", "appId": "AMM202652289", "session": "2027", "applyingClass": "VII", "name": "Lilima Mondal", "gender": "Female", "caste": "General", "dob": "20/01/2014", "dobIso": "2014-01-20", "bloodGroup": "A+", "schoolName": "Pathpukur H.S", "fatherName": "Latif Mondal", "fatherPhone": "7407669780", "fatherWhatsapp": "7074681957", "motherName": "Najmun Nahar Mondal", "motherPhone": "7407669780", "motherWhatsapp": "7074681957", "village": "Purba Raghunath Pur", "postOffice": "Khola Khali Hat", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:09:17"}, {"id": "28", "appId": "AMM202689424", "session": "2027", "applyingClass": "VI", "name": "Labina Molla", "gender": "Female", "caste": "General", "dob": "24/10/2015", "dobIso": "2015-10-24", "bloodGroup": "A+", "schoolName": "S.K Molla Para F.P School", "fatherName": "Abdul Hannan Molla", "fatherPhone": "9681318977", "fatherWhatsapp": "9681318977", "motherName": "Ambia Molla", "motherPhone": "9681318977", "motherWhatsapp": "9681318977", "village": "Chaltaberia", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 21:03:37"}, {"id": "27", "appId": "AMM202658328", "session": "2027", "applyingClass": "IX", "name": "Ashif Molla", "gender": "Female", "caste": "General", "dob": "19/12/2012", "dobIso": "2012-12-19", "bloodGroup": "A+", "schoolName": "Chaltaberia H.S", "fatherName": "Abdul Hannan Molla", "fatherPhone": "9681318977", "fatherWhatsapp": "9091016771", "motherName": "Ambia Molla", "motherPhone": "9091016771", "motherWhatsapp": "9091016771", "village": "Chaltaberia", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 20:50:29"}, {"id": "26", "appId": "AMM202685742", "session": "2027", "applyingClass": "V", "name": "Rahan Shaikh", "gender": "Male", "caste": "General", "dob": "28/04/2017", "dobIso": "2017-04-28", "bloodGroup": "A+", "schoolName": "Chaltaberia F.P School", "fatherName": "Nurhossain Shaikh", "fatherPhone": "9091016771", "fatherWhatsapp": "9091016771", "motherName": "Rahima Shaikh", "motherPhone": "9091016771", "motherWhatsapp": "9091016771", "village": "Ulurdari", "postOffice": "Chaltaberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 20:46:48"}, {"id": "25", "appId": "AMM202614379", "session": "2027", "applyingClass": "VI", "name": "Tahamin Molya", "gender": "Female", "caste": "General", "dob": "02/03/2015", "dobIso": "2015-03-02", "bloodGroup": "A+", "schoolName": "Keyatala H.S", "fatherName": "Jakir Hossain Molya", "fatherPhone": "7547916640", "fatherWhatsapp": "7547916640", "motherName": "Mamataj Molya", "motherPhone": "7547916640", "motherWhatsapp": "7547916640", "village": "Uttar Garankati", "postOffice": "Buinchbati", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:53:28"}, {"id": "24", "appId": "AMM202654565", "session": "2027", "applyingClass": "VI", "name": "Rifa Molla", "gender": "Female", "caste": "General", "dob": "27/12/2015", "dobIso": "2015-12-27", "bloodGroup": "A+", "schoolName": "Dara Adarsha Vidyamandir", "fatherName": "Daihan Molla", "fatherPhone": "7047567044", "fatherWhatsapp": "7047567044", "motherName": "Rokeya Molla", "motherPhone": "7047567044", "motherWhatsapp": "7047567044", "village": "Taranagar", "postOffice": "Buinchbati", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:49:20"}, {"id": "23", "appId": "AMM202668009", "session": "2027", "applyingClass": "VI", "name": "Afrina Molla", "gender": "Female", "caste": "General", "dob": "20/01/2015", "dobIso": "2015-01-20", "bloodGroup": "A+", "schoolName": "Keyatala H.S", "fatherName": "Ali Hossain Molla", "fatherPhone": "9800482791", "fatherWhatsapp": "9800482791", "motherName": "Anowara Mollya", "motherPhone": "9800482791", "motherWhatsapp": "9800482791", "village": "Uttar Garankati", "postOffice": "Buinchbati", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:43:23"}, {"id": "22", "appId": "AMM202633433", "session": "2027", "applyingClass": "V", "name": "Shaikh Jasbin", "gender": "Female", "caste": "General", "dob": "03/11/2016", "dobIso": "2016-11-03", "bloodGroup": "A+", "schoolName": "Srijani K.G School", "fatherName": "Sk. Jakir Hossain", "fatherPhone": "8001067109", "fatherWhatsapp": "9907487603", "motherName": "Sayema Begum", "motherPhone": "8001067109", "motherWhatsapp": "9907487603", "village": "Noorpur", "postOffice": "Noorpur", "policeStation": "Diamond Harbour", "district": "24 pgs (S)", "pinCode": "743368", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:38:22"}, {"id": "21", "appId": "AMM202671300", "session": "2027", "applyingClass": "VI", "name": "Ruhana Khatun", "gender": "Female", "caste": "General", "dob": "09/01/2015", "dobIso": "2015-01-09", "bloodGroup": "A+", "schoolName": "Ram Nagar H.S", "fatherName": "Usman Molla", "fatherPhone": "7584956158", "fatherWhatsapp": "7547665514", "motherName": "Amina Bibi", "motherPhone": "7584956158", "motherWhatsapp": "7547665514", "village": "Charabarti Abad", "postOffice": "Chhayani", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743376", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:33:39"}, {"id": "20", "appId": "AMM202676258", "session": "2027", "applyingClass": "IX", "name": "Nishat Maliat", "gender": "Female", "caste": "General", "dob": "01/11/2012", "dobIso": "2012-11-01", "bloodGroup": "A+", "schoolName": "Natun Hat Girls High School", "fatherName": "Najibul Haque Molla", "fatherPhone": "8001441098", "fatherWhatsapp": "8001441098", "motherName": "Salma Khatun", "motherPhone": "8001441098", "motherWhatsapp": "8001441098", "village": "Molla Pukhuria", "postOffice": "Patra", "policeStation": "Diamond Harbour", "district": "24 pgs (S)", "pinCode": "743368", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:28:32"}, {"id": "19", "appId": "AMM202696826", "session": "2027", "applyingClass": "VII", "name": "Jasmin Sardar", "gender": "Female", "caste": "General", "dob": "22/04/2014", "dobIso": "2014-04-22", "bloodGroup": "A+", "schoolName": "----------NOT MENTIONED----------", "fatherName": "Jakir Hossain Sardar", "fatherPhone": "7047354152", "fatherWhatsapp": "7047354152", "motherName": "Hasiba Sardar", "motherPhone": "7047354152", "motherWhatsapp": "7047354152", "village": "Baloi Jhanka", "postOffice": "Dhosa", "policeStation": "Canning", "district": "24 pgs (S)", "pinCode": "743396", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:22:57"}, {"id": "18", "appId": "AMM202652208", "session": "2027", "applyingClass": "V", "name": "Asrin Fakir", "gender": "Female", "caste": "General", "dob": "10/03/2016", "dobIso": "2016-03-10", "bloodGroup": "A+", "schoolName": "Jaynagar Instituition", "fatherName": "Anowar Hossain Fakir", "fatherPhone": "7797287667", "fatherWhatsapp": "7797287667", "motherName": "Jasmina Fakir", "motherPhone": "7797287667", "motherWhatsapp": "7797287667", "village": "Hossain Pur", "postOffice": "South Bishnupur", "policeStation": "Mandir Bazar", "district": "24 pgs (S)", "pinCode": "743395", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:16:58"}, {"id": "17", "appId": "AMM202652155", "session": "2027", "applyingClass": "VI", "name": "Ruhina Laskar", "gender": "Female", "caste": "General", "dob": "20/02/2015", "dobIso": "2015-02-20", "bloodGroup": "A+", "schoolName": "Kanthal Beria High School", "fatherName": "Rahaman Laskar", "fatherPhone": "9748434695", "fatherWhatsapp": "9748434695", "motherName": "Sainaj Bibi", "motherPhone": "9748434695", "motherWhatsapp": "9748434695", "village": "Sankar Pur", "postOffice": "Sankar Pur", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743610", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:11:09"}, {"id": "16", "appId": "AMM202696330", "session": "2027", "applyingClass": "VIII", "name": "Muskan Laskar", "gender": "Female", "caste": "General", "dob": "21/04/2013", "dobIso": "2013-04-21", "bloodGroup": "A-", "schoolName": "Kanthal Beria High School", "fatherName": "Abdulhai Laskar", "fatherPhone": "9748434695", "fatherWhatsapp": "9748434695", "motherName": "Rokeya Bibi", "motherPhone": "9748434695", "motherWhatsapp": "9748434695", "village": "Sankar Pur", "postOffice": "Sankar Pur", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "743610", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 19:00:51"}, {"id": "15", "appId": "AMM202621750", "session": "2027", "applyingClass": "V", "name": "KHADIJA MOLLA", "gender": "Female", "caste": "General", "dob": "14/06/2016", "dobIso": "2016-06-14", "bloodGroup": "A+", "schoolName": "RAYNAGAR PUR F.P SCHOOL", "fatherName": "KHURSHID ALAM MOLLA", "fatherPhone": "9932898278", "fatherWhatsapp": "9932898278", "motherName": "HALIMA MOLLA", "motherPhone": "9932898278", "motherWhatsapp": "9932898278", "village": "HARINARAYAN PUR", "postOffice": "GORER HAT", "policeStation": "JAYNAGAR", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-10 18:51:39"}, {"id": "14", "appId": "AMM202668570", "session": "2027", "applyingClass": "V", "name": "MASUMA MOLLA", "gender": "Female", "caste": "General", "dob": "07/05/2016", "dobIso": "2016-05-07", "bloodGroup": "O+", "schoolName": "AZAD SISHU SIKHA NIKETAN", "fatherName": "MIRJAN ALI MOLLA", "fatherPhone": "8116947998", "fatherWhatsapp": "8116947998", "motherName": "MONIRA BIBI MOLLA", "motherPhone": "8116947998", "motherWhatsapp": "8116947998", "village": "UDAYRAMPUR", "postOffice": "SITARAMPUR", "policeStation": "KULPI", "district": "SOUTH 24 PARGANAS", "pinCode": "743351", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-09 16:33:14"}, {"id": "13", "appId": "AMM202622195", "session": "2027", "applyingClass": "V", "name": "AYESA SIDDIKA", "gender": "Female", "caste": "General", "dob": "18/11/2016", "dobIso": "2016-11-18", "bloodGroup": "B+", "schoolName": "PASCHIM BAGDA FP SCHOOL", "fatherName": "AJIJUL MOLLA", "fatherPhone": "7548089283", "fatherWhatsapp": "7548089283", "motherName": "REHENA KHATUN", "motherPhone": "7548089283", "motherWhatsapp": "7548089283", "village": "CHANDNAGAR", "postOffice": "CHANDNAGAR", "policeStation": "DIAMOND HARBOUR", "district": "SOUTH 24 PARGANAS", "pinCode": "743368", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-08 11:52:38"}, {"id": "12", "appId": "AMM202647226", "session": "2027", "applyingClass": "IX", "name": "Mahek Dhali", "gender": "Female", "caste": "General", "dob": "06/08/2012", "dobIso": "2012-08-06", "bloodGroup": "AB+", "schoolName": "Jouthia Bowni Vidyapith(H.S)", "fatherName": "Saifuddin Dhali", "fatherPhone": "9932585344", "fatherWhatsapp": "8617487906", "motherName": "Sabina Dhali", "motherPhone": "8617487906", "motherWhatsapp": "8617487906", "village": "Killa Durganagar", "postOffice": "Baishata", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-08 11:37:45"}, {"id": "11", "appId": "AMM202648323", "session": "2027", "applyingClass": "VIII", "name": "AFSANA GAYEN", "gender": "Female", "caste": "General", "dob": "27/05/2013", "dobIso": "2013-05-27", "bloodGroup": "B+", "schoolName": "GARDEWANI HIGH SCHOOL", "fatherName": "ABUL HOSSAIN GAYEN", "fatherPhone": "9732417207", "fatherWhatsapp": "9731417207", "motherName": "SAJINA GAYEN", "motherPhone": "9339628682", "motherWhatsapp": "9339628682", "village": "THAKURCHAK", "postOffice": "THAKURCHAK", "policeStation": "BAKULTALA", "district": "SOUTH 24 PGS", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-06 19:35:53"}, {"id": "10", "appId": "AMM202628701", "session": "2027", "applyingClass": "VI", "name": "SANAM  SARDAR", "gender": "Female", "caste": "General", "dob": "02/12/2015", "dobIso": "2015-12-02", "bloodGroup": "O+", "schoolName": "RASHMONI BALIKA VIDYALAYA", "fatherName": "NOOR  HOSSAIN SARDAR", "fatherPhone": "9831673713", "fatherWhatsapp": "9831673713", "motherName": "FARIDA  BIBI", "motherPhone": "7908424009", "motherWhatsapp": "7908424009", "village": "DUDHNAI", "postOffice": "PIYALI  TOWN", "policeStation": "BARUIPUR", "district": "SOUTH 24 PARGANAS", "pinCode": "743387", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-06 18:14:03"}, {"id": "9", "appId": "AMM202695561", "session": "2027", "applyingClass": "VIII", "name": "Rayhana Sultana", "gender": "Female", "caste": "General", "dob": "11/01/2014", "dobIso": "2014-01-11", "bloodGroup": "A+", "schoolName": "Hansuri High School", "fatherName": "Abul Kalam Mondal", "fatherPhone": "7699740010", "fatherWhatsapp": "9382969425", "motherName": "Sainaj Bibi Mondal", "motherPhone": "7699740010", "motherWhatsapp": "9382969425", "village": "Mirzapur", "postOffice": "Hansury", "policeStation": "Magrahat", "district": "24 pgs (S)", "pinCode": "743609", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-04 18:08:54"}, {"id": "8", "appId": "AMM202624084", "session": "2027", "applyingClass": "V", "name": "Aliya Molla", "gender": "Female", "caste": "General", "dob": "18/07/2016", "dobIso": "2016-07-18", "bloodGroup": "A+", "schoolName": "Agamoni Shishu Shikkhyaaton", "fatherName": "Aslam Molla", "fatherPhone": "9593448718", "fatherWhatsapp": "8250499583", "motherName": "Tajmina Molla", "motherPhone": "9593448718", "motherWhatsapp": "8250499583", "village": "Hogla Eajt", "postOffice": "Sarberia", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-04 17:55:11"}, {"id": "7", "appId": "AMM202675429", "session": "2027", "applyingClass": "V", "name": "Sakil Ahmed Sardar", "gender": "Male", "caste": "General", "dob": "05/09/2016", "dobIso": "2016-09-05", "bloodGroup": "A+", "schoolName": "Dhankhali F.P School", "fatherName": "Abu Kalam Sardar", "fatherPhone": "9734790833", "fatherWhatsapp": "9734790833", "motherName": "Sabina Sardar", "motherPhone": "9734790833", "motherWhatsapp": "9734790833", "village": "Kirtankhola", "postOffice": "Kripa Khali", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-04 17:43:21"}, {"id": "6", "appId": "AMM202613436", "session": "2027", "applyingClass": "VIII", "name": "Arisha Molla", "gender": "Female", "caste": "General", "dob": "21/02/2013", "dobIso": "2013-02-21", "bloodGroup": "A+", "schoolName": "Path Pukur High School", "fatherName": "Atiar Rahaman Molla", "fatherPhone": "9732695314", "fatherWhatsapp": "9732695314", "motherName": "Saleha Molla", "motherPhone": "9732902121", "motherWhatsapp": "9732902121", "village": "Baidyerchak", "postOffice": "Taltala", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-04 15:49:05"}, {"id": "4", "appId": "AMM202615000", "session": "2027", "applyingClass": "VI", "name": "Samim Molla", "gender": "Male", "caste": "General", "dob": "02/10/2015", "dobIso": "2015-10-02", "bloodGroup": "A+", "schoolName": "Baidyerchak F.P School", "fatherName": "Atiar Rahaman Molla", "fatherPhone": "9732695314", "fatherWhatsapp": "9732695314", "motherName": "Saleha Molla", "motherPhone": "9732902121", "motherWhatsapp": "9732902121", "village": "Baidyerchak", "postOffice": "Taltala", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-04 14:15:05"}, {"id": "3", "appId": "AMM202662413", "session": "2027", "applyingClass": "IX", "name": "Tasmina Sekh", "gender": "Female", "caste": "OBC", "dob": "23/09/2012", "dobIso": "2012-09-23", "bloodGroup": "A+", "schoolName": "Futigoda High School", "fatherName": "Ajid Sekh", "fatherPhone": "8961621453", "fatherWhatsapp": "8961621453", "motherName": "Ayesa Sekh", "motherPhone": "8961621453", "motherWhatsapp": "8327485341", "village": "Futigoda", "postOffice": "Futigoda", "policeStation": "Bakultala", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Razorpay", "status": "admitted", "createdAt": "2026-10-04 11:58:36"}, {"id": "2", "appId": "AMM202699378", "session": "2027", "applyingClass": "VIII", "name": "Nisha Parvin Molla", "gender": "Female", "caste": "General", "dob": "02/07/2013", "dobIso": "2013-07-02", "bloodGroup": "A+", "schoolName": "M.G.O High School", "fatherName": "Ainal Molla", "fatherPhone": "7076855974", "fatherWhatsapp": "7076855974", "motherName": "Lalbanu Bibi Molla", "motherPhone": "7076855974", "motherWhatsapp": "7076855974", "village": "Jangaliya", "postOffice": "Punpua", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-10-04 11:40:29"}];
+
+    let applications = [...INITIAL_APPLICATIONS];
+    let currentSearchMode = 'mobile'; // 'mobile' | 'dob' | 'name_verify'
+    let activeDetailAppId = null;
+    let pendingProbableCandidates = null;
+    let pendingSearchNameLabel = '';
+
+    // Reusable Mini AI Agent Avatar SVG string for Chat Messages
+    function getAiAgentAvatarSvg() {
+      return `
+        <svg viewBox="0 0 100 100" class="w-full h-full overflow-visible">
+          <line x1="50" y1="18" x2="50" y2="7" stroke="#64748b" stroke-width="4" stroke-linecap="round" />
+          <circle cx="50" cy="6" r="5.5" fill="#0ea5e9" />
+          <rect x="12" y="34" width="8" height="18" rx="4" fill="#10b981" />
+          <rect x="80" y="34" width="8" height="18" rx="4" fill="#10b981" />
+          <rect x="17" y="18" width="66" height="44" rx="21" fill="url(#aiBotHeadGrad)" stroke="#cbd5e1" stroke-width="1.5" />
+          <rect x="24" y="25" width="52" height="30" rx="14" fill="url(#aiVisorGrad)" stroke="#38bdf8" stroke-width="1.2" />
+          <path d="M33 40 C35 34, 43 34, 45 40" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+          <path d="M55 40 C57 34, 65 34, 67 40" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+          <path d="M44 47 Q50 52 56 47" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M30 64 L70 64 L64 88 C58 92, 42 92, 36 88 Z" fill="url(#aiBotHeadGrad)" />
+          <circle cx="50" cy="76" r="6" fill="#38bdf8" />
+        </svg>
+      `;
+    }
+
+    // Toast helper
+    let toastTimer = null;
+    function showToast(message) {
+      const banner = document.getElementById('toastBanner');
+      const text = document.getElementById('toastText');
+      if (!banner || !text) return;
+      text.textContent = message;
+      banner.classList.remove('hidden');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        banner.classList.add('hidden');
+      }, 2600);
+    }
+
+    function copyTextToClipboard(text, label) {
+      const fallbackCopy = () => {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast(label || `Copied ${text}`);
+        } catch (err) {
+          showToast(`Application ID: ${text}`);
+        }
+        document.body.removeChild(ta);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(label || `Copied ${text} to clipboard!`);
+        }).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function isoToDmy(isoStr) {
+      if (!isoStr) return '';
+      const parts = isoStr.split('-');
+      if (parts.length !== 3) return isoStr;
+      return `${parts[2].padStart(2, '0')}/${parts[1].padStart(2, '0')}/${parts[0]}`;
+    }
+
+    function extractAndNormalizeDobIso(rawText) {
+      if (!rawText) return null;
+      const text = rawText.trim();
+
+      const isoMatch = text.match(/\b(19\d{2}|20\d{2})[-/.](0?[1-9]|1[0-2])[-/.](0?[1-9]|[12]\d|3[01])\b/);
+      if (isoMatch) {
+        return `${isoMatch[1]}-${isoMatch[2].padStart(2, '0')}-${isoMatch[3].padStart(2, '0')}`;
+      }
+
+      const dmyMatch = text.match(/\b(0?[1-9]|[12]\d|3[01])[-/.](0?[1-9]|1[0-2])[-/.](19\d{2}|20\d{2})\b/);
+      if (dmyMatch) {
+        return `${dmyMatch[3]}-${dmyMatch[2].padStart(2, '0')}-${dmyMatch[1].padStart(2, '0')}`;
+      }
+
+      return null;
+    }
+
+    function extractMobileNumber(rawText) {
+      if (!rawText) return null;
+      const withoutDates = rawText
+        .replace(/\b(19\d{2}|20\d{2})[-/.](0?[1-9]|1[0-2])[-/.](0?[1-9]|[12]\d|3[01])\b/g, ' ')
+        .replace(/\b(0?[1-9]|[12]\d|3[01])[-/.](0?[1-9]|1[0-2])[-/.](19\d{2}|20\d{2})\b/g, ' ');
+      const match = withoutDates.match(/(?:\+91|91)?[\s-]*(\d{10})\b/);
+      if (match) return match[1];
+      const digitsOnly = withoutDates.replace(/\D/g, '');
+      if (digitsOnly.length === 10) return digitsOnly;
+      return null;
+    }
+
+    function getRecordPhones(app) {
+      const phones = [];
+      [app.fatherPhone, app.fatherWhatsapp, app.motherPhone, app.motherWhatsapp].forEach(p => {
+        const clean = (p || '').trim();
+        if (clean && !phones.includes(clean)) {
+          phones.push(clean);
+        }
+      });
+      return phones;
+    }
+
+    function levenshtein(a, b) {
+      const m = a.length, n = b.length;
+      if (m === 0) return n;
+      if (n === 0) return m;
+      const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+      for (let i = 0; i <= m; i++) dp[i][0] = i;
+      for (let j = 0; j <= n; j++) dp[0][j] = j;
+      for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+          const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+          dp[i][j] = Math.min(
+            dp[i - 1][j] + 1,
+            dp[i][j - 1] + 1,
+            dp[i - 1][j - 1] + cost
+          );
+        }
+      }
+      return dp[m][n];
+    }
+
+    function scoreProbableName(queryRaw, app) {
+      const q = (queryRaw || '').toLowerCase().replace(/[^a-z\s]/g, ' ').replace(/\s+/g, ' ').trim();
+      if (!q || q.length < 2) return 0;
+
+      const student = (app.name || '').toLowerCase().replace(/[^a-z\s]/g, ' ').replace(/\s+/g, ' ').trim();
+      const father = (app.fatherName || '').toLowerCase().replace(/[^a-z\s]/g, ' ').replace(/\s+/g, ' ').trim();
+      const mother = (app.motherName || '').toLowerCase().replace(/[^a-z\s]/g, ' ').replace(/\s+/g, ' ').trim();
+
+      if (student === q) return 100;
+      if (student.includes(q)) return 90;
+
+      const qTokens = q.split(' ').filter(Boolean);
+      const sTokens = student.split(' ').filter(Boolean);
+      const fTokens = father.split(' ').filter(Boolean);
+      const mTokens = mother.split(' ').filter(Boolean);
+
+      let bestScore = 0;
+      let matchedTokens = 0;
+
+      for (const qt of qTokens) {
+        let tokenBest = 0;
+        for (const st of sTokens) {
+          if (st === qt) {
+            tokenBest = Math.max(tokenBest, 95);
+          } else if (st.startsWith(qt) || qt.startsWith(st)) {
+            tokenBest = Math.max(tokenBest, 82);
+          } else {
+            const dist = levenshtein(qt, st);
+            const maxLen = Math.max(qt.length, st.length);
+            const sim = (1 - dist / maxLen) * 100;
+            if (sim >= 65) tokenBest = Math.max(tokenBest, sim);
+          }
+        }
+        if (tokenBest >= 65) matchedTokens++;
+        bestScore = Math.max(bestScore, tokenBest);
+      }
+
+      if (qTokens.length > 1 && matchedTokens === qTokens.length) {
+        bestScore = Math.max(bestScore, 88);
+      }
+
+      if (bestScore < 75) {
+        if (father.includes(q) || mother.includes(q)) {
+          bestScore = Math.max(bestScore, 76);
+        } else {
+          for (const qt of qTokens) {
+            for (const pt of [...fTokens, ...mTokens]) {
+              if (pt === qt && qt.length >= 3) {
+                bestScore = Math.max(bestScore, 74);
+              }
+            }
+          }
+        }
+      }
+
+      return Math.round(bestScore);
+    }
+
+    function findProbableNameMatches(nameQuery) {
+      const scored = applications
+        .map(app => ({ app, score: scoreProbableName(nameQuery, app) }))
+        .filter(item => item.score >= 68)
+        .sort((a, b) => b.score - a.score);
+      return scored.map(item => item.app);
+    }
+
+    function appendUserMessage(text) {
+      const container = document.getElementById('chatMessagesContainer');
+      const wrapper = document.createElement('div');
+      wrapper.className = 'flex justify-end msg-enter';
+      wrapper.innerHTML = `
+        <div class="max-w-xl rounded-2xl rounded-tr-sm amm-gradient-header text-white px-4 py-3 shadow-md">
+          <p class="text-sm leading-relaxed break-words">${escapeHtml(text)}</p>
+          <div class="text-[10px] text-emerald-100/80 text-right mt-1">You • Just now</div>
+        </div>
+      `;
+      container.appendChild(wrapper);
+      scrollToBottom();
+    }
+
+    function appendTypingIndicator() {
+      const container = document.getElementById('chatMessagesContainer');
+      const wrapper = document.createElement('div');
+      wrapper.id = 'aiTypingIndicator';
+      wrapper.className = 'flex items-start gap-3 msg-enter';
+      wrapper.innerHTML = `
+        <div class="w-9 h-9 rounded-2xl bg-slate-900 border border-teal-400/40 p-1 flex items-center justify-center shrink-0 shadow-sm">
+          ${getAiAgentAvatarSvg()}
+        </div>
+        <div class="bg-white border border-emerald-200 rounded-2xl rounded-tl-sm px-4 py-3 flex items-center gap-2 shadow-sm">
+          <span class="text-xs text-slate-600 mr-1">AI Agent is searching Al-A'raf Mission records</span>
+          <span class="w-2 h-2 rounded-full bg-emerald-600 dot-1"></span>
+          <span class="w-2 h-2 rounded-full bg-amber-500 dot-2"></span>
+          <span class="w-2 h-2 rounded-full bg-emerald-600 dot-3"></span>
+        </div>
+      `;
+      container.appendChild(wrapper);
+      scrollToBottom();
+    }
+
+    function removeTypingIndicator() {
+      const el = document.getElementById('aiTypingIndicator');
+      if (el) el.remove();
+    }
+
+    function buildApplicationCardsHtml(matches, querySummary, verifiedBadgeText = '') {
+      const allIdsList = matches.map(m => m.appId).join(', ');
+      const headerBanner = matches.length > 1
+        ? `<div class="flex flex-wrap items-center justify-between gap-2 bg-emerald-50 border border-emerald-300 rounded-xl px-3.5 py-2.5 mb-3">
+             <div class="flex items-center gap-2">
+               <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#043927] text-amber-300 text-xs font-bold">${matches.length}</span>
+               <span class="text-xs font-bold text-[#043927]">Found ${matches.length} Applications (${escapeHtml(querySummary)})</span>
+             </div>
+             <button type="button" data-copy-all="${escapeHtml(allIdsList)}" class="copy-all-btn text-[11px] font-semibold px-3 py-1 rounded-lg bg-[#043927] hover:bg-emerald-800 text-white transition shadow-sm">
+               Copy All ${matches.length} IDs
+             </button>
+           </div>`
+        : `<div class="flex items-center justify-between gap-2 bg-emerald-50 border border-emerald-300 rounded-xl px-3.5 py-2 mb-3">
+             <span class="text-xs font-bold text-[#043927]">✓ ${escapeHtml(verifiedBadgeText || 'Application Record Verified')}</span>
+           </div>`;
+
+      const cardsHtml = matches.map((app, idx) => {
+        const fatherDisplay = app.fatherName || 'Not Mentioned';
+        const motherDisplay = app.motherName || 'Not Mentioned';
+
+        return `
+          <div class="rounded-2xl bg-white border-2 border-emerald-600/30 hover:border-emerald-600 transition p-4 space-y-3 shadow-sm">
+            <div class="flex flex-wrap items-start justify-between gap-2 border-b border-slate-100 pb-2.5">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Application ID ${matches.length > 1 ? '#' + (idx + 1) : ''}</span>
+                  <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-300">Class ${escapeHtml(app.applyingClass || '-')} • Session ${escapeHtml(app.session || '2027')}</span>
+                </div>
+                <div class="mt-1 flex items-center gap-2">
+                  <span class="font-mono-code text-lg sm:text-xl font-extrabold text-[#043927] tracking-wide select-all">${escapeHtml(app.appId)}</span>
+                  <button type="button" data-copy-id="${escapeHtml(app.appId)}" class="copy-id-btn text-xs font-semibold px-2.5 py-1 rounded-lg bg-emerald-50 hover:bg-[#043927] text-[#043927] hover:text-white border border-emerald-300 transition flex items-center gap-1">
+                    <span>📋 Copy ID</span>
+                  </button>
+                </div>
+              </div>
+
+              <button type="button" data-view-app="${escapeHtml(app.appId)}" class="view-slip-btn text-xs font-semibold px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-emerald-50 text-[#043927] border border-slate-200 transition">
+                View Full Slip →
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
+              <div class="bg-emerald-50/50 rounded-xl p-2.5 border border-emerald-100">
+                <span class="text-slate-500 block text-[10px] font-semibold uppercase tracking-wider">Student Name</span>
+                <span class="font-bold text-slate-900 text-sm mt-0.5 block">${escapeHtml(app.name)}</span>
+              </div>
+              <div class="bg-emerald-50/50 rounded-xl p-2.5 border border-emerald-100">
+                <span class="text-slate-500 block text-[10px] font-semibold uppercase tracking-wider">Father's Name</span>
+                <span class="font-bold text-[#043927] text-sm mt-0.5 block">${escapeHtml(fatherDisplay)}</span>
+              </div>
+              <div class="bg-emerald-50/50 rounded-xl p-2.5 border border-emerald-100">
+                <span class="text-slate-500 block text-[10px] font-semibold uppercase tracking-wider">Mother's Name</span>
+                <span class="font-bold text-amber-800 text-sm mt-0.5 block">${escapeHtml(motherDisplay)}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      return `<div class="mt-3">${headerBanner}<div class="space-y-3">${cardsHtml}</div></div>`;
+    }
+
+    function buildProbableVerificationHtml(candidates) {
+      const uid = 'verify_' + Math.floor(Math.random() * 1000000);
+      const previewItems = candidates.slice(0, 6).map((app, i) => {
+        const maskedId = app.appId.slice(0, 7) + '•••••';
+        return `
+          <div class="rounded-xl bg-white border border-emerald-200 p-2.5 flex flex-wrap items-center justify-between gap-2 text-xs shadow-sm">
+            <div>
+              <div class="font-bold text-slate-800">${i + 1}. ${escapeHtml(app.name)} <span class="text-[11px] font-semibold text-emerald-700">(Applying Class ${escapeHtml(app.applyingClass)})</span></div>
+              <div class="text-[11px] text-slate-500">
+                Father: <strong class="text-slate-700">${escapeHtml(app.fatherName || 'N/A')}</strong> •
+                Mother: <strong class="text-slate-700">${escapeHtml(app.motherName || 'N/A')}</strong>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="font-mono-code text-xs px-2.5 py-1 rounded-lg bg-amber-50 text-amber-800 border border-amber-300 font-semibold" title="Verify Date of Birth below to reveal Application ID">${escapeHtml(maskedId)}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="mt-3 rounded-2xl bg-amber-50/70 border border-amber-300 p-3.5 space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-xs font-bold text-amber-900 flex items-center gap-1.5">
+              <span>🔐 Verify Student's Date of Birth to Reveal Application ID</span>
+            </span>
+            <span class="text-[11px] font-semibold text-amber-800">${candidates.length} probable match${candidates.length > 1 ? 'es' : ''}</span>
+          </div>
+
+          <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+            ${previewItems}
+          </div>
+
+          <div class="pt-2 border-t border-amber-200/80 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+            <input
+              type="date"
+              id="${uid}_date"
+              class="inline-verify-date-input flex-1 rounded-xl bg-white border border-slate-300 px-3 py-2 text-xs text-slate-800 outline-none focus:border-emerald-600"
+            />
+            <input
+              type="text"
+              id="${uid}_text"
+              placeholder="Or type DD/MM/YYYY"
+              class="inline-verify-text-input flex-1 rounded-xl bg-white border border-slate-300 px-3 py-2 text-xs text-slate-800 placeholder-slate-400 outline-none focus:border-emerald-600 font-mono-code"
+            />
+            <button
+              type="button"
+              data-verify-uid="${uid}"
+              class="inline-verify-submit-btn rounded-xl amm-gradient-header hover:opacity-95 text-white font-semibold px-4 py-2 text-xs transition shrink-0 shadow-sm"
+            >
+              ✓ Verify DOB & Show ID
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function appendAiMessage({ introHtml, matches = [], querySummary = '', verifiedBadgeText = '', probableCandidates = null }) {
+      const container = document.getElementById('chatMessagesContainer');
+      const wrapper = document.createElement('div');
+      wrapper.className = 'flex items-start gap-3 msg-enter';
+
+      let bodyExtraHtml = '';
+      if (matches && matches.length > 0) {
+        bodyExtraHtml = buildApplicationCardsHtml(matches, querySummary, verifiedBadgeText);
+      } else if (probableCandidates && probableCandidates.length > 0) {
+        bodyExtraHtml = buildProbableVerificationHtml(probableCandidates);
+      }
+
+      wrapper.innerHTML = `
+        <div class="w-9 h-9 rounded-2xl bg-slate-900 border border-teal-400/40 p-1 flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+          ${getAiAgentAvatarSvg()}
+        </div>
+        <div class="flex-1 max-w-2xl bg-white border border-emerald-100 rounded-2xl rounded-tl-sm p-4 shadow-sm">
+          <div class="text-sm text-slate-700 leading-relaxed space-y-1.5">
+            ${introHtml}
+          </div>
+          ${bodyExtraHtml}
+        </div>
+      `;
+
+      container.appendChild(wrapper);
+      scrollToBottom();
+    }
+
+    function scrollToBottom() {
+      const stream = document.getElementById('chatStream');
+      if (stream) {
+        stream.scrollTop = stream.scrollHeight;
+      }
+    }
+
+    function verifyPendingDob(dobIsoInput) {
+      if (!pendingProbableCandidates || pendingProbableCandidates.length === 0) return false;
+      const dmy = isoToDmy(dobIsoInput);
+      appendUserMessage(`Verify Date of Birth: ${dmy}`);
+      appendTypingIndicator();
+
+      setTimeout(() => {
+        removeTypingIndicator();
+        const verifiedMatches = pendingProbableCandidates.filter(app => app.dobIso === dobIsoInput || app.dob === dmy);
+
+        if (verifiedMatches.length > 0) {
+          const nameLabel = pendingSearchNameLabel;
+          pendingProbableCandidates = null;
+          pendingSearchNameLabel = '';
+          appendAiMessage({
+            introHtml: `<p>🎉 <strong>Date of Birth Verified (${escapeHtml(dmy)})!</strong> Here ${verifiedMatches.length > 1 ? `are the <strong>${verifiedMatches.length} verified applications</strong>` : 'is the verified application'} for <strong>"${escapeHtml(nameLabel)}"</strong>:</p>`,
+            matches: verifiedMatches,
+            querySummary: `Verified Name "${nameLabel}" + DOB ${dmy}`,
+            verifiedBadgeText: `Identity Verified via Date of Birth (${dmy})`
+          });
+        } else {
+          appendAiMessage({
+            introHtml: `<p>⚠️ The Date of Birth <span class="font-mono-code font-semibold text-rose-600">${escapeHtml(dmy)}</span> did not match the probable record(s) for <strong>"${escapeHtml(pendingSearchNameLabel)}"</strong>.</p>
+                        <p class="text-xs text-slate-500">Please double-check the Date of Birth and try verifying again below, or switch the radio button to <strong>By Mobile Number</strong>:</p>`,
+            probableCandidates: pendingProbableCandidates
+          });
+        }
+      }, 280);
+      return true;
+    }
+
+    function processUserQuery(rawText, explicitDobIso = '', optionalNameInDobMode = '') {
+      const cleanText = (rawText || '').trim();
+      const dobFromText = extractAndNormalizeDobIso(cleanText);
+      const effectiveDobIso = explicitDobIso || dobFromText;
+      const effectiveDobDmy = effectiveDobIso ? isoToDmy(effectiveDobIso) : '';
+      const mobile = extractMobileNumber(cleanText);
+
+      if (pendingProbableCandidates && effectiveDobIso && !mobile && cleanText.replace(/[0-9/-]/g, '').trim().length < 3) {
+        verifyPendingDob(effectiveDobIso);
+        return;
+      }
+
+      let displayMsg = cleanText;
+      if (currentSearchMode === 'dob' && effectiveDobDmy) {
+        displayMsg = optionalNameInDobMode
+          ? `Date of Birth: ${effectiveDobDmy} • Student Name: "${optionalNameInDobMode}"`
+          : `Date of Birth: ${effectiveDobDmy}`;
+      } else if (explicitDobIso && cleanText) {
+        displayMsg = `Student Name: "${cleanText}" • Date of Birth: ${effectiveDobDmy}`;
+      }
+      if (!displayMsg) return;
+
+      appendUserMessage(displayMsg);
+      appendTypingIndicator();
+
+      setTimeout(() => {
+        removeTypingIndicator();
+
+        // 1. Mobile Number Lookup
+        if (mobile) {
+          pendingProbableCandidates = null;
+          const matches = applications.filter(app => getRecordPhones(app).includes(mobile));
+
+          const extraNameText = cleanText.replace(mobile, '').replace(/[^a-zA-Z\s]/g, ' ').trim();
+          let filteredMatches = matches;
+          if (extraNameText.length >= 3 && matches.length > 1) {
+            const byName = matches.filter(app => scoreProbableName(extraNameText, app) >= 65);
+            if (byName.length > 0) filteredMatches = byName;
+          }
+
+          if (filteredMatches.length > 0) {
+            const intro = filteredMatches.length > 1
+              ? `<p>We found <strong>${filteredMatches.length} applications</strong> registered with mobile number <span class="font-mono-code font-bold text-[#043927]">${escapeHtml(mobile)}</span>. All matching records are displayed below:</p>`
+              : `<p>We found <strong>1 application</strong> registered with mobile number <span class="font-mono-code font-bold text-[#043927]">${escapeHtml(mobile)}</span>:</p>`;
+            appendAiMessage({
+              introHtml: intro,
+              matches: filteredMatches,
+              querySummary: `Mobile: ${mobile}`,
+              verifiedBadgeText: `Matched Registered Mobile (${mobile})`
+            });
+          } else {
+            appendAiMessage({
+              introHtml: `<p>No application record was found for mobile number <span class="font-mono-code font-semibold text-rose-600">${escapeHtml(mobile)}</span>.</p>
+                          <p class="text-xs text-slate-500">Please check the 10-digit number or select <strong>By Date of Birth</strong> or <strong>By Student Name</strong> using the radio buttons below.</p>`
+            });
+          }
+          return;
+        }
+
+        // 2. Probable Name Match + Date of Birth Verification
+        const nameCandidateText = (currentSearchMode === 'dob'
+          ? optionalNameInDobMode
+          : cleanText
+              .replace(/\b(0?[1-9]|[12]\d|3[01])[-/.](0?[1-9]|1[0-2])[-/.](19\d{2}|20\d{2})\b/g, '')
+              .replace(/\b(19\d{2}|20\d{2})[-/.](0?[1-9]|1[0-2])[-/.](0?[1-9]|[12]\d|3[01])\b/g, '')
+        ).trim();
+
+        if (nameCandidateText.length >= 2) {
+          const probableMatches = findProbableNameMatches(nameCandidateText);
+
+          if (probableMatches.length > 0) {
+            if (effectiveDobIso) {
+              const verified = probableMatches.filter(app => app.dobIso === effectiveDobIso || app.dob === effectiveDobDmy);
+              if (verified.length > 0) {
+                pendingProbableCandidates = null;
+                appendAiMessage({
+                  introHtml: `<p>✓ <strong>Name Matched & Date of Birth (${escapeHtml(effectiveDobDmy)}) Verified!</strong> Here ${verified.length > 1 ? `are the <strong>${verified.length} matching applications</strong>` : 'is your application record'}:</p>`,
+                  matches: verified,
+                  querySummary: `Name: "${nameCandidateText}" + DOB: ${effectiveDobDmy}`,
+                  verifiedBadgeText: `Name Matched & DOB (${effectiveDobDmy}) Verified`
+                });
+                return;
+              } else {
+                pendingProbableCandidates = probableMatches;
+                pendingSearchNameLabel = nameCandidateText;
+                appendAiMessage({
+                  introHtml: `<p>We found <strong>${probableMatches.length} probable match${probableMatches.length > 1 ? 'es' : ''}</strong> for <strong>"${escapeHtml(nameCandidateText)}"</strong>, but Date of Birth <span class="font-mono-code font-semibold text-rose-600">${escapeHtml(effectiveDobDmy)}</span> did not match.</p>
+                              <p class="text-xs text-slate-600">Please enter the correct <strong>Date of Birth</strong> below to verify and view the Application ID:</p>`,
+                  probableCandidates: probableMatches
+                });
+                return;
+              }
+            }
+
+            pendingProbableCandidates = probableMatches;
+            pendingSearchNameLabel = nameCandidateText;
+            appendAiMessage({
+              introHtml: `<p>We found <strong>${probableMatches.length} probable match${probableMatches.length > 1 ? 'es' : ''}</strong> for <strong>"${escapeHtml(nameCandidateText)}"</strong>.</p>
+                          <p class="text-xs text-slate-600">To protect student privacy, please <strong>verify the Date of Birth</strong> below to reveal the <strong>Application ID, Student Name, Father's Name, and Mother's Name</strong>:</p>`,
+              probableCandidates: probableMatches
+            });
+            return;
+          }
+        }
+
+        // 3. Pure Date of Birth Lookup
+        if (effectiveDobIso) {
+          pendingProbableCandidates = null;
+          const dobMatches = applications.filter(app => app.dobIso === effectiveDobIso || app.dob === effectiveDobDmy);
+          if (dobMatches.length > 0) {
+            const intro = dobMatches.length > 1
+              ? `<p>We found <strong>${dobMatches.length} applications</strong> matching Date of Birth <span class="font-mono-code font-bold text-[#043927]">${escapeHtml(effectiveDobDmy)}</span>:</p>`
+              : `<p>We found <strong>1 application</strong> matching Date of Birth <span class="font-mono-code font-bold text-[#043927]">${escapeHtml(effectiveDobDmy)}</span>:</p>`;
+            appendAiMessage({
+              introHtml: intro,
+              matches: dobMatches,
+              querySummary: `DOB: ${effectiveDobDmy}`,
+              verifiedBadgeText: `Matched Date of Birth (${effectiveDobDmy})`
+            });
+          } else {
+            appendAiMessage({
+              introHtml: `<p>No application record was found matching Date of Birth <span class="font-mono-code font-semibold text-rose-600">${escapeHtml(effectiveDobDmy)}</span>.</p>
+                          <p class="text-xs text-slate-500">Please check the date or try searching with your <strong>Registered Mobile Number</strong>.</p>`
+            });
+          }
+          return;
+        }
+
+        // 4. No Match Found
+        appendAiMessage({
+          introHtml: `<p>We couldn't find any matching record for <strong>"${escapeHtml(cleanText)}"</strong>.</p>
+                      <p class="text-xs text-slate-500">Please select a search method below using the radio buttons and enter your <strong>10-digit Mobile Number</strong>, <strong>Date of Birth</strong>, or <strong>Student Name</strong>.</p>`
+        });
+      }, 280);
+    }
+
+    // Welcome Interface inside Chatbox with Official Brand Logo & Professional 3D Floating AI Agent SVG
+    function initWelcomeChat() {
+      const container = document.getElementById('chatMessagesContainer');
+      container.innerHTML = '';
+      pendingProbableCandidates = null;
+      pendingSearchNameLabel = '';
+
+      const welcomeCard = document.createElement('div');
+      welcomeCard.className = 'msg-enter rounded-3xl bg-gradient-to-br from-white via-emerald-50/40 to-amber-50/40 border-2 border-emerald-600/20 p-5 sm:p-6 shadow-md space-y-5';
+      welcomeCard.innerHTML = `
+        <!-- Top Welcome Header with Brand Logo & Floating 3D AI Agent Mascot SVG -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-emerald-100 pb-4">
+          <div class="flex items-center gap-3.5 text-center sm:text-left flex-col sm:flex-row">
+            <div class="w-16 h-16 rounded-2xl bg-white border-2 border-emerald-500/30 p-1.5 shadow-md flex items-center justify-center shrink-0">
+              <img
+                src="https://alarafmission.org/assets/logo/amm_logo.png"
+                alt="Al-A'raf Mission Official Logo"
+                class="w-full h-full object-contain max-w-full h-auto"
+              />
+            </div>
+            <div>
+              <span class="inline-block text-[10px] font-extrabold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300 mb-1">
+                Assalamu Alaikum • Admission Helpdesk 2027
+              </span>
+              <h3 class="font-serif-title text-lg sm:text-xl font-extrabold text-[#043927]">Welcome to Al-A'raf Mission AI ID Finder</h3>
+              <p class="text-xs text-slate-600 mt-0.5">Hi! I'm your intelligent Admission AI Agent. Select how you'd like to recover your Application ID below.</p>
+            </div>
+          </div>
+
+          <!-- Centerpiece Professional 3D Floating AI Agent SVG (Inspired by Reference Image) -->
+          <div class="w-28 h-24 rounded-2xl bg-gradient-to-b from-[#06152d] via-[#042f2e] to-[#064e3b] p-2 shadow-lg border border-teal-400/40 flex flex-col items-center justify-center shrink-0 relative overflow-hidden" title="Al-A'raf Intelligent AI Agent">
+            <svg viewBox="0 0 120 115" class="w-full h-full overflow-visible">
+              <!-- Glowing Background Energy Halo -->
+              <circle cx="60" cy="52" r="42" fill="none" stroke="url(#aiCyanGlow)" stroke-width="1.2" opacity="0.4" />
+              <circle cx="60" cy="52" r="32" fill="url(#aiCoreOrb)" opacity="0.2" />
+
+              <!-- Floating AI Robot Agent -->
+              <g class="ai-agent-float">
+                <!-- Antenna -->
+                <line x1="60" y1="24" x2="60" y2="12" stroke="#cbd5e1" stroke-width="3.5" stroke-linecap="round" />
+                <ellipse cx="60" cy="24" rx="8" ry="3" fill="#38bdf8" />
+                <circle cx="60" cy="10" r="5" fill="#38bdf8" filter="url(#neonGlow)" class="ai-antenna-orb" />
+
+                <!-- Waving Left Arm -->
+                <g class="ai-agent-arm-wave">
+                  <path d="M34 65 C20 58, 16 48, 20 41" fill="none" stroke="url(#aiBotHeadGrad)" stroke-width="7.5" stroke-linecap="round" />
+                  <circle cx="20" cy="40" r="4.5" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+                </g>
+                <!-- Right Arm -->
+                <path d="M86 65 C97 70, 100 77, 96 83" fill="none" stroke="url(#aiBotHeadGrad)" stroke-width="7.5" stroke-linecap="round" />
+                <circle cx="96" cy="83" r="4.5" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+
+                <!-- Torso & Glowing Core -->
+                <path d="M38 62 C38 58, 82 58, 82 62 L76 86 C74 90, 46 90, 44 86 Z" fill="url(#aiBotHeadGrad)" />
+                <circle cx="60" cy="73" r="7.5" fill="url(#aiCoreOrb)" filter="url(#neonGlow)" />
+                <circle cx="60" cy="73" r="4" fill="#e0f2fe" />
+
+                <!-- Side Ear Pods -->
+                <rect x="20" y="34" width="7.5" height="17" rx="3.8" fill="url(#aiCyanGlow)" filter="url(#neonGlow)" />
+                <rect x="92.5" y="34" width="7.5" height="17" rx="3.8" fill="url(#aiCyanGlow)" filter="url(#neonGlow)" />
+
+                <!-- Glossy 3D Head -->
+                <rect x="25" y="22" width="70" height="40" rx="20" fill="url(#aiBotHeadGrad)" stroke="#ffffff" stroke-width="1" />
+                <!-- Dark Visor Screen -->
+                <rect x="32" y="28" width="56" height="28" rx="13" fill="url(#aiVisorGrad)" stroke="#38bdf8" stroke-width="1.1" stroke-opacity="0.5" />
+                <path d="M40 31 Q60 29 78 31" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round" opacity="0.35" />
+
+                <!-- Happy Glowing Cyan Eyes & Smile -->
+                <g class="ai-agent-eyes" filter="url(#neonGlow)">
+                  <path d="M41 43 C43 37, 51 37, 53 43" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+                  <path d="M67 43 C69 37, 77 37, 79 43" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+                  <path d="M54 49 Q60 53.5 66 49" fill="none" stroke="#38bdf8" stroke-width="2.3" stroke-linecap="round" />
+                </g>
+              </g>
+
+              <!-- Voice Equalizer & Mic Ring at Base -->
+              <g stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.9">
+                <line x1="34" y1="101" x2="34" y2="107" class="ai-eq-1" />
+                <line x1="41" y1="98" x2="41" y2="110" class="ai-eq-2" />
+                <circle cx="60" cy="104" r="7.5" fill="#0f172a" stroke="#38bdf8" stroke-width="1.6" />
+                <rect x="58" y="100" width="4" height="6" rx="2" fill="#38bdf8" stroke="none" />
+                <line x1="79" y1="98" x2="79" y2="110" class="ai-eq-1" />
+                <line x1="86" y1="101" x2="86" y2="107" class="ai-eq-2" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- 3 Interactive Welcome Method Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <button type="button" data-select-welcome-mode="mobile" class="welcome-method-card text-left rounded-2xl bg-white border border-emerald-200/90 p-3.5 space-y-1.5 cursor-pointer">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-emerald-100 text-[#043927] flex items-center justify-center text-sm font-bold">📱</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">Option 1</span>
+            </div>
+            <div class="font-bold text-slate-900 text-xs sm:text-sm pt-1">By Mobile Number</div>
+            <p class="text-[11px] text-slate-500 leading-snug">Enter your 10-digit number. Displays all applications linked to that phone.</p>
+          </button>
+
+          <button type="button" data-select-welcome-mode="dob" class="welcome-method-card text-left rounded-2xl bg-white border border-emerald-200/90 p-3.5 space-y-1.5 cursor-pointer">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold">🎂</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200">Option 2</span>
+            </div>
+            <div class="font-bold text-slate-900 text-xs sm:text-sm pt-1">By Date of Birth</div>
+            <p class="text-[11px] text-slate-500 leading-snug">Select the student's Date of Birth (plus optional Name) to find your ID.</p>
+          </button>
+
+          <button type="button" data-select-welcome-mode="name_verify" class="welcome-method-card text-left rounded-2xl bg-white border border-emerald-200/90 p-3.5 space-y-1.5 cursor-pointer">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-emerald-100 text-[#043927] flex items-center justify-center text-sm font-bold">🧑</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">Option 3</span>
+            </div>
+            <div class="font-bold text-slate-900 text-xs sm:text-sm pt-1">By Student Name</div>
+            <p class="text-[11px] text-slate-500 leading-snug">Match probable student names, then verify Date of Birth to reveal your ID.</p>
+          </button>
+        </div>
+
+        <!-- Bottom Info Bar -->
+        <div class="rounded-xl bg-emerald-900/5 border border-emerald-900/10 px-3.5 py-2 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-600">
+          <span>💡 <strong>Output includes:</strong> Application ID, Student Name, Father's Name & Mother's Name</span>
+          <span class="font-semibold text-[#043927]">AI Agent ready below ↓</span>
+        </div>
+      `;
+
+      container.appendChild(welcomeCard);
+    }
+
+    function openApplicationDetailModal(appId) {
+      const app = applications.find(a => a.appId === appId);
+      if (!app) return;
+      activeDetailAppId = app.appId;
+
+      const body = document.getElementById('detailModalBody');
+      body.innerHTML = `
+        <div class="rounded-2xl bg-emerald-50 border border-emerald-200 p-3.5 text-center space-y-1">
+          <span class="text-[11px] font-semibold uppercase tracking-wider text-emerald-800 block">Official Application No.</span>
+          <span class="font-mono-code text-xl font-extrabold text-[#043927] select-all">${escapeHtml(app.appId)}</span>
+          <div class="pt-1">
+            <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300">Applying Class ${escapeHtml(app.applyingClass)} • Session ${escapeHtml(app.session || '2027')}</span>
+          </div>
+        </div>
+
+        <div class="space-y-2 bg-slate-50 rounded-2xl p-3.5 border border-slate-200 text-xs">
+          <div class="flex justify-between py-1.5 border-b border-slate-200">
+            <span class="text-slate-500 font-medium">Student Name</span>
+            <span class="font-bold text-slate-900">${escapeHtml(app.name)}</span>
+          </div>
+          <div class="flex justify-between py-1.5 border-b border-slate-200">
+            <span class="text-slate-500 font-medium">Father's Name</span>
+            <span class="font-bold text-[#043927]">${escapeHtml(app.fatherName || 'Not Mentioned')}</span>
+          </div>
+          <div class="flex justify-between py-1.5 border-b border-slate-200">
+            <span class="text-slate-500 font-medium">Mother's Name</span>
+            <span class="font-bold text-amber-800">${escapeHtml(app.motherName || 'Not Mentioned')}</span>
+          </div>
+          <div class="flex justify-between py-1.5 border-b border-slate-200">
+            <span class="text-slate-500 font-medium">Date of Birth</span>
+            <span class="font-mono-code font-semibold text-slate-800">${escapeHtml(app.dob)}</span>
+          </div>
+          <div class="flex justify-between py-1.5 border-b border-slate-200">
+            <span class="text-slate-500 font-medium">Gender / Category</span>
+            <span class="text-slate-800">${escapeHtml(app.gender || '-')} • ${escapeHtml(app.caste || 'General')}</span>
+          </div>
+          <div class="flex justify-between py-1">
+            <span class="text-slate-500 font-medium">Admission Status</span>
+            <span class="font-semibold text-emerald-700 uppercase">${escapeHtml(app.status || 'Admitted')}</span>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('detailModal').classList.remove('hidden');
+    }
+
+    function setSearchMode(mode, focusInput = false) {
+      currentSearchMode = mode;
+      const radios = document.querySelectorAll('input[name="searchMethod"]');
+      radios.forEach(r => {
+        r.checked = (r.value === mode);
+      });
+
+      const textWrapper = document.getElementById('textInputWrapper');
+      const chatInput = document.getElementById('chatInput');
+      const secondaryNameWrapper = document.getElementById('secondaryNameWrapper');
+      const secondaryNameInput = document.getElementById('secondaryNameInput');
+      const dobWrapper = document.getElementById('dobInputWrapper');
+      const dobPicker = document.getElementById('dobPickerInput');
+      const hintEl = document.getElementById('activeModeHint');
+      const btnSend = document.getElementById('btnSend');
+
+      if (mode === 'mobile') {
+        textWrapper.classList.remove('hidden');
+        secondaryNameWrapper.classList.add('hidden');
+        dobWrapper.classList.add('hidden');
+        dobPicker.value = '';
+        chatInput.placeholder = 'Enter 10-digit Registered Mobile Number...';
+        if (hintEl) hintEl.textContent = 'Enter 10-digit Mobile Number to find all linked Application IDs';
+        if (btnSend) btnSend.querySelector('span').textContent = 'Find ID';
+        if (focusInput) chatInput.focus();
+      } else if (mode === 'dob') {
+        textWrapper.classList.add('hidden');
+        dobWrapper.classList.remove('hidden', 'sm:w-48');
+        dobWrapper.classList.add('flex-1');
+        secondaryNameWrapper.classList.remove('hidden');
+        secondaryNameInput.placeholder = 'Student Name (optional)...';
+        if (hintEl) hintEl.textContent = 'Select Date of Birth (+ optional Student Name)';
+        if (btnSend) btnSend.querySelector('span').textContent = 'Find ID';
+        if (focusInput) dobPicker.focus();
+      } else if (mode === 'name_verify') {
+        textWrapper.classList.remove('hidden');
+        secondaryNameWrapper.classList.add('hidden');
+        dobWrapper.classList.remove('hidden', 'flex-1');
+        dobWrapper.classList.add('sm:w-48');
+        chatInput.placeholder = 'Enter Student Name (e.g. First or Full Name)...';
+        if (hintEl) hintEl.textContent = 'Step 1: Enter Student Name → Step 2: Verify Date of Birth';
+        if (btnSend) btnSend.querySelector('span').textContent = 'Match Name';
+        if (focusInput) chatInput.focus();
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initWelcomeChat();
+      setSearchMode('mobile');
+
+      document.querySelectorAll('input[name="searchMethod"]').forEach(radio => {
+        radio.addEventListener('change', (e) => {
+          if (e.target.checked) {
+            setSearchMode(e.target.value, true);
+          }
+        });
+      });
+
+      document.querySelectorAll('.search-mode-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          setSearchMode(btn.dataset.searchMode || 'mobile', true);
+        });
+      });
+
+      const chatForm = document.getElementById('chatForm');
+      const chatInput = document.getElementById('chatInput');
+      const secondaryNameInput = document.getElementById('secondaryNameInput');
+      const dobPicker = document.getElementById('dobPickerInput');
+      const btnClearInput = document.getElementById('btnClearInput');
+
+      chatInput.addEventListener('input', () => {
+        if (chatInput.value.trim().length > 0) {
+          btnClearInput.classList.remove('hidden');
+        } else {
+          btnClearInput.classList.add('hidden');
+        }
+      });
+
+      btnClearInput.addEventListener('click', () => {
+        chatInput.value = '';
+        btnClearInput.classList.add('hidden');
+        chatInput.focus();
+      });
+
+      chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const textVal = chatInput.value.trim();
+        const dobVal = dobPicker.value.trim();
+        const secNameVal = secondaryNameInput ? secondaryNameInput.value.trim() : '';
+
+        if (currentSearchMode === 'dob') {
+          if (!dobVal && !secNameVal) {
+            showToast('Please select a Date of Birth or enter a Student Name');
+            return;
+          }
+          processUserQuery(secNameVal, dobVal, secNameVal);
+          return;
+        }
+
+        if (!textVal && !dobVal) {
+          showToast('Please enter your Mobile Number, Student Name, or Date of Birth');
+          return;
+        }
+
+        processUserQuery(textVal, dobVal);
+        chatInput.value = '';
+        btnClearInput.classList.add('hidden');
+      });
+
+      document.body.addEventListener('click', (e) => {
+        const welcomeCardBtn = e.target.closest('[data-select-welcome-mode]');
+        if (welcomeCardBtn) {
+          const targetMode = welcomeCardBtn.getAttribute('data-select-welcome-mode');
+          if (targetMode) {
+            setSearchMode(targetMode, true);
+            showToast(`Switched to ${targetMode === 'mobile' ? 'Mobile Number' : targetMode === 'dob' ? 'Date of Birth' : 'Student Name'} search`);
+          }
+          return;
+        }
+
+        const presetBtn = e.target.closest('.quick-preset-btn');
+        if (presetBtn) {
+          const query = presetBtn.getAttribute('data-quick-query');
+          if (query) processUserQuery(query);
+          return;
+        }
+
+        const inlineVerifyBtn = e.target.closest('.inline-verify-submit-btn');
+        if (inlineVerifyBtn) {
+          const uid = inlineVerifyBtn.getAttribute('data-verify-uid');
+          const dateEl = document.getElementById(`${uid}_date`);
+          const textEl = document.getElementById(`${uid}_text`);
+          const rawDate = (dateEl && dateEl.value) ? dateEl.value : (textEl ? textEl.value : '');
+          const iso = extractAndNormalizeDobIso(rawDate);
+          if (!iso) {
+            showToast('Please select or type a valid Date of Birth (DD/MM/YYYY)');
+            return;
+          }
+          verifyPendingDob(iso);
+          return;
+        }
+
+        const copyIdBtn = e.target.closest('.copy-id-btn');
+        if (copyIdBtn) {
+          const appId = copyIdBtn.getAttribute('data-copy-id');
+          if (appId) copyTextToClipboard(appId, `Copied Application ID: ${appId}`);
+          return;
+        }
+
+        const copyAllBtn = e.target.closest('.copy-all-btn');
+        if (copyAllBtn) {
+          const allIds = copyAllBtn.getAttribute('data-copy-all');
+          if (allIds) copyTextToClipboard(allIds, `Copied all IDs: ${allIds}`);
+          return;
+        }
+
+        const viewSlipBtn = e.target.closest('.view-slip-btn');
+        if (viewSlipBtn) {
+          const appId = viewSlipBtn.getAttribute('data-view-app');
+          if (appId) openApplicationDetailModal(appId);
+        }
+      });
+
+      document.getElementById('btnResetChat').addEventListener('click', () => {
+        initWelcomeChat();
+        showToast('Ready for a new search');
+      });
+
+      document.querySelectorAll('.legacy-reset').forEach(btn => {
+        btn.addEventListener('click', () => {
+          initWelcomeChat();
+        });
+      });
+
+      const floatingHelper = document.getElementById('btnFloatingBoatHelper');
+      if (floatingHelper) {
+        floatingHelper.addEventListener('click', () => {
+          setSearchMode(currentSearchMode, true);
+          showToast('AI Agent ready — enter your details below');
+        });
+      }
+
+      // Keep handlers for hidden legacy elements
+      const noopPrivacy = () => { showToast('Directory and manual entry are hidden for privacy'); };
+      document.getElementById('btnToggleMode').addEventListener('click', noopPrivacy);
+      document.getElementById('btnCloseDrawer').addEventListener('click', noopPrivacy);
+      document.getElementById('directoryFilterInput').addEventListener('input', noopPrivacy);
+      document.getElementById('btnOpenAddModal').addEventListener('click', noopPrivacy);
+      document.getElementById('btnAddRecordFooter').addEventListener('click', noopPrivacy);
+      document.getElementById('btnCloseModal').addEventListener('click', noopPrivacy);
+      document.getElementById('btnCancelModal').addEventListener('click', noopPrivacy);
+      document.getElementById('addRecordForm').addEventListener('submit', (e) => { e.preventDefault(); noopPrivacy(); });
+
+      const detailModal = document.getElementById('detailModal');
+      const closeDetail = () => detailModal.classList.add('hidden');
+      document.getElementById('btnCloseDetailModal').addEventListener('click', closeDetail);
+      document.getElementById('btnCloseDetailBottom').addEventListener('click', closeDetail);
+      document.getElementById('btnCopyDetailId').addEventListener('click', () => {
+        if (activeDetailAppId) {
+          copyTextToClipboard(activeDetailAppId, `Copied Application ID: ${activeDetailAppId}`);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
