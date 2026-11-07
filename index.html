@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al-A'raf Mission | Intelligent Application ID Recovery AI Agent</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at 15% 15%, #e6f4ee 0%, #f1f6f3 45%, #eaf1ed 100%);
+      color: #1e293b;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .font-serif-title {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .font-mono-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #e2ece7;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #059669, #047857);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #064e3b;
+    }
+
+    /* Typing Indicator */
+    @keyframes bounceDot {
+      0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+      40% { transform: translateY(-5px); opacity: 1; }
+    }
+    .dot-1 { animation: bounceDot 1.4s infinite ease-in-out both; animation-delay: -0.32s; }
+    .dot-2 { animation: bounceDot 1.4s infinite ease-in-out both; animation-delay: -0.16s; }
+    .dot-3 { animation: bounceDot 1.4s infinite ease-in-out both; }
+
+    /* Message Entrance */
+    @keyframes fadeInSlide {
+      from { opacity: 0; transform: translateY(10px) scale(0.99); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .msg-enter {
+      animation: fadeInSlide 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Professional Floating AI Agent Animations */
+    @keyframes floatAgent {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-9px) rotate(1deg); }
+    }
+    @keyframes waveArm {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-14deg); }
+      75% { transform: rotate(8deg); }
+    }
+    @keyframes antennaPulse {
+      0%, 100% { transform: scale(1); opacity: 0.95; }
+      50% { transform: scale(1.25); opacity: 1; }
+    }
+    @keyframes ringExpand {
+      0% { r: 8; opacity: 0.75; }
+      100% { r: 26; opacity: 0; }
+    }
+    @keyframes eyeBlink {
+      0%, 46%, 50%, 96%, 100% { transform: scaleY(1); }
+      48%, 98% { transform: scaleY(0.15); }
+    }
+    @keyframes eqBar1 {
+      0%, 100% { transform: scaleY(0.4); }
+      50% { transform: scaleY(1.1); }
+    }
+    @keyframes eqBar2 {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(0.35); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.38), 0 12px 28px -5px rgba(6, 78, 59, 0.28); }
+      50% { box-shadow: 0 0 0 9px rgba(16, 185, 129, 0), 0 16px 34px -5px rgba(6, 78, 59, 0.38); }
+    }
+
+    .ai-agent-float {
+      animation: floatAgent 3.8s ease-in-out infinite;
+      transform-origin: center center;
+    }
+    .ai-agent-arm-wave {
+      animation: waveArm 2.6s ease-in-out infinite;
+      transform-origin: 34px 68px;
+    }
+    .ai-agent-eyes {
+      animation: eyeBlink 5.5s infinite;
+      transform-origin: 60px 44px;
+    }
+    .ai-antenna-orb {
+      animation: antennaPulse 2s ease-in-out infinite;
+      transform-origin: 60px 13px;
+    }
+    .ai-eq-1 {
+      animation: eqBar1 1.1s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .ai-eq-2 {
+      animation: eqBar2 0.9s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .floating-mascot-badge {
+      animation: floatAgent 3.8s ease-in-out infinite, pulseGlow 3s infinite;
+    }
+
+    /* Gradients & Patterns */
+    .amm-gradient-header {
+      background: linear-gradient(135deg, #043927 0%, #065f46 52%, #047857 100%);
+    }
+    .amm-hero-banner {
+      background: linear-gradient(125deg, #032b1e 0%, #064e3b 50%, #065f46 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .amm-hero-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(rgba(251, 191, 36, 0.16) 1.2px, transparent 1.2px),
+        radial-gradient(rgba(16, 185, 129, 0.12) 1.2px, transparent 1.2px);
+      background-size: 26px 26px;
+      background-position: 0 0, 13px 13px;
+      pointer-events: none;
+    }
+    .chat-surface-bg {
+      background-color: #f8fbf9;
+      background-image:
+        radial-gradient(at 90% 10%, rgba(16, 185, 129, 0.06) 0px, transparent 50%),
+        radial-gradient(at 10% 90%, rgba(245, 158, 11, 0.06) 0px, transparent 50%);
+    }
+
+    /* Radio Card Styling */
+    .radio-card {
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .radio-card:hover {
+      transform: translateY(-1px);
+      border-color: #10b981;
+    }
+    .radio-card:has(input:checked) {
+      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+      border-color: #059669;
+      color: #064e3b;
+      box-shadow: 0 4px 14px -3px rgba(5, 150, 105, 0.22), 0 0 0 1.5px #059669;
+    }
+
+    .welcome-method-card {
+      transition: all 0.22s ease;
+    }
+    .welcome-method-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -6px rgba(6, 78, 59, 0.14);
+      border-color: #059669;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col text-slate-800 relative">
+
+  <!-- Reusable SVG Defs for 3D-Shaded AI Agent Robot -->
+  <svg width="0" height="0" class="absolute pointer-events-none" aria-hidden="true">
+    <defs>
+      <!-- 3D Glossy White Robot Body Gradient -->
+      <radialGradient id="aiBotHeadGrad" cx="35%" cy="28%" r="70%">
+        <stop offset="0%" stop-color="#ffffff" />
+        <stop offset="55%" stop-color="#e2f1ec" />
+        <stop offset="85%" stop-color="#cbd5e1" />
+        <stop offset="100%" stop-color="#94a3b8" />
+      </radialGradient>
+      <!-- Dark Glass Visor Gradient -->
+      <linearGradient id="aiVisorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="50%" stop-color="#022c22" />
+        <stop offset="100%" stop-color="#090d16" />
+      </linearGradient>
+      <!-- Glowing Cyan-Emerald Energy Gradient -->
+      <linearGradient id="aiCyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38bdf8" />
+        <stop offset="50%" stop-color="#2dd4bf" />
+        <stop offset="100%" stop-color="#10b981" />
+      </linearGradient>
+      <!-- Glowing Core Radial Gradient -->
+      <radialGradient id="aiCoreOrb" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#e0f2fe" />
+        <stop offset="45%" stop-color="#38bdf8" />
+        <stop offset="80%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" stop-opacity="0" />
+      </radialGradient>
+      <!-- Soft Neon Drop Glow Filter -->
+      <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur stdDeviation="2.5" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Top Institutional Contact Bar (Matches alarafmission.org) -->
+  <div class="bg-[#032b1e] text-emerald-50 text-xs py-2 px-4 border-b border-emerald-800/70 shrink-0">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        <span class="font-medium tracking-wide text-emerald-100">An ideal residential institution for talented students</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] sm:text-xs font-medium text-emerald-100">
+        <span>📞 +91 7001836496 | +91 9735664089</span>
+        <span class="hidden md:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/30 font-semibold">
+          Admission 2027 Portal
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Website Header with Official Brand Logo (https://alarafmission.org/assets/logo/amm_logo.png) -->
+  <header class="bg-white/95 backdrop-blur-md shadow-sm border-b border-emerald-100 sticky top-0 z-30 shrink-0">
+    <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-between gap-4">
+      <!-- Brand Logo & Name -->
+      <div class="flex items-center gap-3.5">
+        <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-emerald-50 to-amber-50/60 p-1 shadow-sm border border-emerald-200/80 flex items-center justify-center shrink-0 overflow-hidden">
+          <img
+            id="brandHeaderLogo"
+            src="https://alarafmission.org/assets/logo/amm_logo.png"
+            alt="Al-A'raf Mission Official Logo"
+            class="w-full h-full object-contain max-w-full h-auto"
+          />
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-serif-title text-xl sm:text-2xl font-extrabold text-[#043927] tracking-tight leading-none">Al-A'raf Mission</h1>
+            <span class="hidden sm:inline-block text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 border border-amber-300">Residential Institute</span>
+          </div>
+          <p class="text-xs font-medium text-emerald-800/80 mt-1">Shaping Futures, Building Character • WB Board (Class V – XII)</p>
+        </div>
+      </div>
+
+      <!-- Right Header Controls -->
+      <div class="flex items-center gap-2.5">
+        <div class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-50/90 border border-emerald-200/80 text-xs text-emerald-900 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-600 animate-ping"></span>
+          <span>AI Recovery Agent Online</span>
+        </div>
+
+        <button id="btnResetChat" type="button" title="Start Fresh Search" class="text-xs font-semibold px-3.5 py-2.5 rounded-xl amm-gradient-header hover:opacity-95 text-white transition flex items-center gap-1.5 shadow-md">
+          <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+          </svg>
+          <span>New Search</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner with Professional Floating 3D AI Agent SVG -->
+  <section class="amm-hero-banner text-white py-3.5 px-4 border-b-4 border-amber-500 shrink-0">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+      <div class="space-y-1 text-center sm:text-left">
+        <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-300 text-[11px] font-bold uppercase tracking-wider">
+          <span>🤖 Admissions 2027 • Intelligent AI Agent</span>
+        </div>
+        <h2 class="font-serif-title text-lg sm:text-2xl font-bold text-white tracking-tight">Forgot Your Admission Application ID?</h2>
+        <p class="text-xs sm:text-sm text-emerald-100/90 max-w-xl">Ask our intelligent AI Agent to recover your Application ID using your registered Mobile Number, Date of Birth, or Student Name.</p>
+      </div>
+
+      <!-- Animated Floating AI Agent Mascot Card in Banner -->
+      <div class="flex items-center gap-3.5 bg-slate-950/45 backdrop-blur-md border border-teal-400/30 rounded-2xl px-4 py-2 shrink-0 shadow-xl">
+        <div class="w-16 h-16 relative flex items-center justify-center">
+          <svg viewBox="0 0 120 120" class="w-full h-full overflow-visible">
+            <!-- Ambient Halo Rings -->
+            <circle cx="60" cy="54" r="44" fill="none" stroke="url(#aiCyanGlow)" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.45" />
+            <ellipse cx="60" cy="96" rx="34" ry="6" fill="url(#aiCyanGlow)" opacity="0.28" />
+
+            <!-- Floating 3D AI Robot Group -->
+            <g class="ai-agent-float">
+              <!-- Antenna -->
+              <line x1="60" y1="26" x2="60" y2="14" stroke="#94a3b8" stroke-width="3.5" stroke-linecap="round" />
+              <ellipse cx="60" cy="26" rx="8" ry="3" fill="url(#aiCyanGlow)" />
+              <circle cx="60" cy="12" r="5.5" fill="url(#aiCyanGlow)" filter="url(#neonGlow)" class="ai-antenna-orb" />
+
+              <!-- Waving Left Arm -->
+              <g class="ai-agent-arm-wave">
+                <path d="M34 68 C20 62, 16 52, 20 45" fill="none" stroke="url(#aiBotHeadGrad)" stroke-width="8" stroke-linecap="round" />
+                <circle cx="20" cy="44" r="5" fill="#1e293b" stroke="url(#aiCyanGlow)" stroke-width="1.5" />
+              </g>
+              <!-- Right Arm -->
+              <path d="M86 68 C98 72, 102 80, 98 86" fill="none" stroke="url(#aiBotHeadGrad)" stroke-width="8" stroke-linecap="round" />
+              <circle cx="98" cy="86" r="4.5" fill="#1e293b" stroke="url(#aiCyanGlow)" stroke-width="1.5" />
+
+              <!-- Robot Torso -->
+              <path d="M38 64 C38 60, 82 60, 82 64 L76 90 C74 94, 46 94, 44 90 Z" fill="url(#aiBotHeadGrad)" />
+              <!-- Glowing Chest Core -->
+              <circle cx="60" cy="76" r="8" fill="url(#aiCoreOrb)" filter="url(#neonGlow)" />
+              <circle cx="60" cy="76" r="4.5" fill="#e0f2fe" />
+
+              <!-- Ear Pods -->
+              <rect x="20" y="36" width="8" height="18" rx="4" fill="url(#aiCyanGlow)" filter="url(#neonGlow)" />
+              <rect x="92" y="36" width="8" height="18" rx="4" fill="url(#aiCyanGlow)" filter="url(#neonGlow)" />
+
+              <!-- Robot Rounded 3D Head -->
+              <rect x="25" y="24" width="70" height="42" rx="21" fill="url(#aiBotHeadGrad)" stroke="#ffffff" stroke-width="1" />
+              <!-- Glossy Visor Screen -->
+              <rect x="32" y="30" width="56" height="30" rx="14" fill="url(#aiVisorGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.45" />
+              <!-- Visor Specular Highlight -->
+              <path d="M40 33 Q60 31 78 33" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.35" />
+
+              <!-- Glowing Happy Arc Eyes & Smile -->
+              <g class="ai-agent-eyes" filter="url(#neonGlow)">
+                <path d="M41 45 C43 39, 51 39, 53 45" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+                <path d="M67 45 C69 39, 77 39, 79 45" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+                <path d="M54 51 Q60 56 66 51" fill="none" stroke="#38bdf8" stroke-width="2.4" stroke-linecap="round" />
+              </g>
+            </g>
+
+            <!-- Voice Wave / Equalizer Bars at Bottom -->
+            <g stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" opacity="0.9">
+              <line x1="36" y1="106" x2="36" y2="112" class="ai-eq-1" />
+              <line x1="42" y1="103" x2="42" y2="115" class="ai-eq-2" />
+              <line x1="48" y1="106" x2="48" y2="112" class="ai-eq-1" />
+              <circle cx="60" cy="109" r="7" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8" />
+              <circle cx="60" cy="109" r="2.5" fill="#38bdf8" />
+              <line x1="72" y1="106" x2="72" y2="112" class="ai-eq-2" />
+              <line x1="78" y1="103" x2="78" y2="115" class="ai-eq-1" />
+              <line x1="84" y1="106" x2="84" y2="112" class="ai-eq-2" />
+            </g>
+          </svg>
+        </div>
+        <div class="text-left">
+          <div class="text-xs font-extrabold text-teal-300 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
+            <span>AI Support Agent</span>
+          </div>
+          <div class="text-[11px] text-emerald-100 mt-0.5">Instant & Verified ID Lookup</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Chatbot Card Container -->
+  <main class="flex-1 max-w-4xl w-full mx-auto px-3 sm:px-4 py-4 flex flex-col overflow-hidden relative">
+    <div class="flex-1 bg-white rounded-3xl shadow-xl border border-emerald-900/10 flex flex-col overflow-hidden relative">
+
+      <!-- Chatbot Status Topbar -->
+      <div class="bg-gradient-to-r from-emerald-50/90 via-white to-amber-50/60 border-b border-emerald-100 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="relative w-10 h-10 rounded-2xl bg-white border-2 border-emerald-600/30 p-1 flex items-center justify-center shadow-sm">
+            <img
+              src="https://alarafmission.org/assets/logo/amm_logo.png"
+              alt="AMM Logo"
+              class="w-full h-full object-contain max-w-full h-auto"
+            />
+            <span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-white"></span>
+          </div>
+          <div>
+            <div class="text-xs sm:text-sm font-extrabold text-[#043927] flex items-center gap-2">
+              <span>Al-A'raf AI Admission Agent</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">Active AI</span>
+            </div>
+            <div class="text-[11px] text-slate-500">Select a search method below or click an option card to begin</div>
+          </div>
+        </div>
+
+        <div class="hidden sm:flex items-center gap-2">
+          <span class="text-[11px] font-semibold text-amber-900 bg-amber-100/90 px-3 py-1 rounded-full border border-amber-300/80 shadow-sm">
+            🔒 Student Privacy Protected
+          </span>
+        </div>
+      </div>
+
+      <!-- Chat Messages Stream -->
+      <div id="chatStream" class="flex-1 overflow-y-auto px-4 sm:px-6 py-5 space-y-4 chat-surface-bg min-h-[340px] max-h-[56vh]">
+        <div class="max-w-3xl mx-auto space-y-4" id="chatMessagesContainer">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+
+      <!-- Interactive Search Control Dock with Radio Buttons -->
+      <div class="border-t border-emerald-100 bg-white p-3.5 sm:p-4 shrink-0 shadow-[0_-4px_20px_-10px_rgba(6,78,59,0.1)]">
+        <div class="max-w-3xl mx-auto space-y-3">
+
+          <!-- Radio Buttons to Select Search Method -->
+          <div class="space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-1">
+              <span class="text-xs font-extrabold uppercase tracking-wider text-[#043927] flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                <span>Choose Search Method:</span>
+              </span>
+              <span id="activeModeHint" class="text-xs text-emerald-700 font-semibold">Enter 10-digit Mobile Number to find all linked Application IDs</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5" role="radiogroup" aria-label="Search Method">
+              <!-- Radio 1: By Mobile Number -->
+              <label class="radio-card cursor-pointer rounded-2xl bg-slate-50/90 border border-slate-200 px-3.5 py-2.5 flex items-center gap-3 text-xs text-slate-700 shadow-sm">
+                <input type="radio" name="searchMethod" value="mobile" checked class="w-4 h-4 accent-[#047857] shrink-0" />
+                <div class="leading-tight">
+                  <div class="font-bold text-slate-900 text-xs sm:text-[13px]">📱 By Mobile Number</div>
+                  <div class="text-[11px] text-slate-500 mt-0.5">Shows all IDs for that number</div>
+                </div>
+              </label>
+
+              <!-- Radio 2: By Date of Birth (+ Name) -->
+              <label class="radio-card cursor-pointer rounded-2xl bg-slate-50/90 border border-slate-200 px-3.5 py-2.5 flex items-center gap-3 text-xs text-slate-700 shadow-sm">
+                <input type="radio" name="searchMethod" value="dob" class="w-4 h-4 accent-[#047857] shrink-0" />
+                <div class="leading-tight">
+                  <div class="font-bold text-slate-900 text-xs sm:text-[13px]">🎂 By Date of Birth</div>
+                  <div class="text-[11px] text-slate-500 mt-0.5">DOB + Student Name match</div>
+                </div>
+              </label>
+
+              <!-- Radio 3: By Student Name (Probable Match + Verify DOB) -->
+              <label class="radio-card cursor-pointer rounded-2xl bg-slate-50/90 border border-slate-200 px-3.5 py-2.5 flex items-center gap-3 text-xs text-slate-700 shadow-sm">
+                <input type="radio" name="searchMethod" value="name_verify" class="w-4 h-4 accent-[#047857] shrink-0" />
+                <div class="leading-tight">
+                  <div class="font-bold text-slate-900 text-xs sm:text-[13px]">🧑 By Student Name</div>
+                  <div class="text-[11px] text-slate-500 mt-0.5">Probable match → verify DOB</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Dynamic Search Input Form -->
+          <form id="chatForm" class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+            <!-- Primary Input (Mobile Number or Student Name) -->
+            <div id="textInputWrapper" class="relative flex-1">
+              <input
+                id="chatInput"
+                type="text"
+                autocomplete="off"
+                placeholder="Enter 10-digit Registered Mobile Number..."
+                class="w-full rounded-2xl bg-slate-50 focus:bg-white border-2 border-slate-200 focus:border-[#047857] focus:ring-4 focus:ring-emerald-500/15 px-4 py-3 text-sm text-slate-800 placeholder-slate-400 outline-none transition pr-10 shadow-inner"
+              />
+              <button
+                type="button"
+                id="btnClearInput"
+                title="Clear input"
+                class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+              >
+                ✕
+              </button>
+            </div>
+
+            <!-- Secondary Student Name Input (Shown when 'By Date of Birth' radio is selected) -->
+            <div id="secondaryNameWrapper" class="hidden sm:w-60">
+              <input
+                id="secondaryNameInput"
+                type="text"
+                autocomplete="off"
+                placeholder="Student Name (optional)..."
+                class="w-full rounded-2xl bg-slate-50 focus:bg-white border-2 border-slate-200 focus:border-[#047857] focus:ring-4 focus:ring-emerald-500/15 px-3.5 py-3 text-sm text-slate-800 placeholder-slate-400 outline-none transition shadow-inner"
+              />
+            </div>
+
+            <!-- Date of Birth Picker Input -->
+            <div id="dobInputWrapper" class="hidden sm:w-48">
+              <input
+                id="dobPickerInput"
+                type="date"
+                title="Select Date of Birth"
+                class="w-full rounded-2xl bg-slate-50 focus:bg-white border-2 border-slate-200 focus:border-[#047857] focus:ring-4 focus:ring-emerald-500/15 px-3.5 py-3 text-sm text-slate-800 outline-none transition shadow-inner"
+              />
+            </div>
+
+            <button
+              type="submit"
+              id="btnSend"
+              class="rounded-2xl amm-gradient-header hover:opacity-95 text-white font-bold px-6 py-3 text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/20 shrink-0"
+            >
+              <span>Find ID</span>
+              <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Floating AI Agent Mascot Widget (Bottom Left Corner) -->
+  <button
+    id="btnFloatingBoatHelper"
+    type="button"
+    title="Al-A'raf AI Agent — Click to start searching your Application ID"
+    class="hidden md:flex fixed bottom-16 left-5 z-30 floating-mascot-badge rounded-2xl bg-slate-900/95 text-white border-2 border-teal-400/50 px-3.5 py-2 items-center gap-2.5 shadow-2xl hover:border-amber-400 transition cursor-pointer"
+  >
+    <div class="w-10 h-10 rounded-xl bg-slate-950 border border-teal-400/40 flex items-center justify-center p-1 overflow-visible">
+      <!-- Mini 3D AI Agent SVG -->
+      <svg viewBox="0 0 100 100" class="w-full h-full overflow-visible">
+        <line x1="50" y1="18" x2="50" y2="8" stroke="#94a3b8" stroke-width="3.5" stroke-linecap="round" />
+        <circle cx="50" cy="7" r="5" fill="#38bdf8" />
+        <rect x="14" y="34" width="7" height="16" rx="3.5" fill="#38bdf8" />
+        <rect x="79" y="34" width="7" height="16" rx="3.5" fill="#38bdf8" />
+        <rect x="18" y="20" width="64" height="42" rx="20" fill="url(#aiBotHeadGrad)" />
+        <rect x="25" y="26" width="50" height="29" rx="13" fill="url(#aiVisorGrad)" stroke="#38bdf8" stroke-width="1.2" />
+        <path d="M33 41 C35 35, 43 35, 45 41" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+        <path d="M55 41 C57 35, 65 35, 67 41" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+        <path d="M44 47 Q50 52 56 47" fill="none" stroke="#38bdf8" stroke-width="2.4" stroke-linecap="round" />
+        <path d="M32 64 L68 64 L63 86 C58 90, 42 90, 37 86 Z" fill="url(#aiBotHeadGrad)" />
+        <circle cx="50" cy="75" r="6" fill="#38bdf8" />
+      </svg>
+    </div>
+    <div class="text-left pr-1">
+      <div class="text-[11px] font-extrabold text-teal-300 leading-tight">AI ID Guide</div>
+      <div class="text-[10px] text-emerald-100 font-medium">Click to Search</div>
+    </div>
+  </button>
+
+  <!-- Institutional Footer (Matches alarafmission.org Footer) -->
+  <footer class="bg-[#032b1e] text-emerald-100/90 text-xs py-3.5 px-4 border-t border-emerald-800 shrink-0">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <img src="https://alarafmission.org/assets/logo/amm_logo.png" alt="AMM" class="w-5 h-5 object-contain bg-white rounded-full p-0.5 max-w-full h-auto" />
+        <span><strong class="text-white">Al-A'raf Mission | Residential Institute</strong> • Regd. Office: Uttar Padua, Mayahawri, Bakultala, 24 Pgs (S), West Bengal - 743337</span>
+      </div>
+      <div class="text-emerald-200/80">
+        © 2023 - 2026 Al-A'raf Mission. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Official Application Slip Detail Modal -->
+  <div id="detailModal" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-filter backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white border-2 border-emerald-200 rounded-3xl max-w-md w-full p-5 shadow-2xl space-y-4 text-slate-800">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-2.5">
+          <img src="https://alarafmission.org/assets/logo/amm_logo.png" alt="Al-A'raf Mission Logo" class="w-8 h-8 object-contain max-w-full h-auto" />
+          <div>
+            <h3 class="text-sm font-extrabold uppercase tracking-wider text-[#043927]">Al-A'raf Mission</h3>
+            <p class="text-[11px] text-slate-500">Official Admission Application Summary</p>
+          </div>
+        </div>
+        <button id="btnCloseDetailModal" type="button" class="text-slate-400 hover:text-slate-700 p-1">✕</button>
+      </div>
+      <div id="detailModalBody" class="space-y-3 text-sm">
+        <!-- Populated dynamically -->
+      </div>
+      <div class="pt-2 flex items-center justify-between gap-2 border-t border-slate-200">
+        <button id="btnCopyDetailId" type="button" class="flex-1 py-2.5 rounded-xl amm-gradient-header text-xs font-semibold text-white transition shadow-sm">
+          Copy Application ID
+        </button>
+        <button id="btnCloseDetailBottom" type="button" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-xs font-medium text-slate-700 transition">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastBanner" class="hidden fixed bottom-5 right-5 z-50 bg-[#043927] text-white px-4 py-2.5 rounded-xl shadow-xl text-xs font-semibold flex items-center gap-2 border border-amber-400/50">
+    <span class="text-amber-300">✓</span>
+    <span id="toastText">Copied to clipboard!</span>
+  </div>
+
+  <!-- Strictly Hidden Legacy DOM Hooks -->
+  <div class="hidden" aria-hidden="true">
+    <button id="btnToggleMode" type="button"><span id="modeBtnLabel">Directory & Test Data</span> <span id="recordCountBadge">11</span></button>
+    <button id="btnOpenAddModal" type="button">Add Record</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">📱 9876543210 3 Apps</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">📱 9123456789 2 Apps</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">🎂 DOB: 1999-08-15 3 Apps</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">📱 9988776655 (1 App)</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">🎂 DOB: 22/03/2001</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">📱 9775612002 2 Apps</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">📱 8509968682 2 Apps</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">🎂 DOB: 24/10/2015 3 Apps</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">🧑 Name: "Salman Molla" (Verify DOB)</button>
+    <button type="button" class="quick-preset-btn" data-quick-query="">🧑 Name: "Royaboruddin"</button>
+    <button type="button" class="search-mode-tab" data-search-mode="smart">✨ Smart AI Chat</button>
+    <button type="button" class="search-mode-tab" data-search-mode="mobile">📱 By Mobile No.</button>
+    <button type="button" class="search-mode-tab" data-search-mode="dob">🎂 By Date of Birth</button>
+    <button type="button" class="search-mode-tab" data-search-mode="both">🔐 Mobile + DOB</button>
+    <button type="button" class="legacy-reset">Reset Chat</button>
+    <aside id="directoryDrawer">
+      <button id="btnCloseDrawer" type="button">✕</button>
+      <input id="directoryFilterInput" type="text" />
+      <div id="directoryList"></div>
+      <button id="btnAddRecordFooter" type="button">+ New Application</button>
+    </aside>
+    <div id="addRecordModal">
+      <button id="btnCloseModal" type="button">✕</button>
+      <form id="addRecordForm">
+        <input id="newAppName" type="text" />
+        <input id="newAppFather" type="text" />
+        <input id="newAppMother" type="text" />
+        <input id="newAppMobile" type="text" />
+        <input id="newAppDob" type="date" />
+        <input id="newAppProgram" type="text" />
+        <select id="newAppStatus"><option value="admitted">admitted</option></select>
+        <input id="newAppCustomId" type="text" />
+        <button type="button" id="btnCancelModal">Cancel</button>
+        <button type="submit">Save & Test Lookup</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Private In-Memory Admission Dataset (149 records from uploaded sheet; hidden until verified search)
+    const INITIAL_APPLICATIONS = [{"id": "152", "appId": "AMM202648452", "session": "2027", "applyingClass": "VIII", "name": "Royaboruddin Naskar", "gender": "Male", "caste": "General", "dob": "24/08/2013", "dobIso": "2013-08-24", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Ayub Ali Naskar", "fatherPhone": "8337094662", "fatherWhatsapp": "8337094662", "motherName": "Rojina Naskar", "motherPhone": "8337094662", "motherWhatsapp": "8337094662", "village": "Padmapukur Kazipara", "postOffice": "Baruipur", "policeStation": "Baruipur", "district": "24 pgs (S)", "pinCode": "700144", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 15:54:49"}, {"id": "151", "appId": "AMM202625049", "session": "2027", "applyingClass": "IX", "name": "Toufik Sekh", "gender": "Male", "caste": "General", "dob": "08/07/2012", "dobIso": "2012-07-08", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Jiyarul Sekh", "fatherPhone": "8649845534", "fatherWhatsapp": "8649845534", "motherName": "Not Mentioned", "motherPhone": "8649845534", "motherWhatsapp": "8649845534", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 15:48:31"}, {"id": "150", "appId": "AMM202685846", "session": "2027", "applyingClass": "VII", "name": "Rajibul Laskar", "gender": "Male", "caste": "General", "dob": "18/12/2014", "dobIso": "2014-12-18", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Rakib Laskar", "fatherPhone": "6296353711", "fatherWhatsapp": "6296353711", "motherName": "Rina Laskar", "motherPhone": "6296353711", "motherWhatsapp": "6296353711", "village": "Chatra", "postOffice": "Chatra Maldari", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 15:05:03"}, {"id": "149", "appId": "AMM202649816", "session": "2027", "applyingClass": "V", "name": "Asifa Halder", "gender": "Female", "caste": "General", "dob": "30/12/2016", "dobIso": "2016-12-30", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Hafijur Rahaman Halder", "fatherPhone": "7699285502", "fatherWhatsapp": "7699285502", "motherName": "Alema Halder", "motherPhone": "7699285502", "motherWhatsapp": "7699285502", "village": "Purba Radhaballav Pur", "postOffice": "Radhaballav Pur", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743349", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:59:17"}, {"id": "148", "appId": "AMM202690018", "session": "2027", "applyingClass": "VII", "name": "Mukurder Laskar", "gender": "Male", "caste": "General", "dob": "01/11/2014", "dobIso": "2014-11-01", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Mijanur Laskar", "fatherPhone": "1111111111", "fatherWhatsapp": "1111111111", "motherName": "Not Mentioned", "motherPhone": "1111111111", "motherWhatsapp": "", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:48:08"}, {"id": "147", "appId": "AMM202619131", "session": "2027", "applyingClass": "VI", "name": "Tanvir Laskar", "gender": "Male", "caste": "General", "dob": "24/10/2015", "dobIso": "2015-10-24", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Hafijul Laskar", "fatherPhone": "9002765053", "fatherWhatsapp": "9002765053", "motherName": "Tamina Laskar", "motherPhone": "9002765053", "motherWhatsapp": "9002765053", "village": "Uttarpara Nij", "postOffice": "Baharu", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743372", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:45:14"}, {"id": "146", "appId": "AMM202625506", "session": "2027", "applyingClass": "VIII", "name": "Jaidul Sekh", "gender": "Male", "caste": "General", "dob": "29/06/2013", "dobIso": "2013-06-29", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Mofijul Sekh", "fatherPhone": "9775647940", "fatherWhatsapp": "9775647940", "motherName": "Jayeda Sekh", "motherPhone": "9775647940", "motherWhatsapp": "9775647940", "village": "Arunnagar Dakshin", "postOffice": "Chatra Maldari", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:33:01"}, {"id": "145", "appId": "AMM202615453", "session": "2027", "applyingClass": "IX", "name": "Suhan Purkait", "gender": "Male", "caste": "General", "dob": "01/01/2013", "dobIso": "2013-01-01", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Jahiruddin Purkait", "fatherPhone": "6297619800", "fatherWhatsapp": "6297619800", "motherName": "Sumaiya Bibi", "motherPhone": "6297619800", "motherWhatsapp": "6297619800", "village": "Purba Sankarpur", "postOffice": "Dhola Hat", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 14:14:54"}, {"id": "144", "appId": "AMM202671070", "session": "2027", "applyingClass": "IX", "name": "Farhan Purkait", "gender": "Male", "caste": "General", "dob": "21/11/2012", "dobIso": "2012-11-21", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Sherif Uddin", "fatherPhone": "9734015171", "fatherWhatsapp": "9734015171", "motherName": "Not Mentioned", "motherPhone": "9734015171", "motherWhatsapp": "9734015171", "village": "Sankarpur", "postOffice": "Sankarpur", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:53:11"}, {"id": "143", "appId": "AMM202678582", "session": "2027", "applyingClass": "V", "name": "Tazmim Khatun", "gender": "Female", "caste": "General", "dob": "20/01/2015", "dobIso": "2015-01-20", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Tazuddin Purkait", "fatherPhone": "8927766450", "fatherWhatsapp": "8927766450", "motherName": "Not Mentioned", "motherPhone": "8927766450", "motherWhatsapp": "8927766450", "village": "Sankarpur", "postOffice": "Sankarpur", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:49:49"}, {"id": "142", "appId": "AMM202662342", "session": "2027", "applyingClass": "V", "name": "Jeba Irani", "gender": "Female", "caste": "General", "dob": "11/01/2016", "dobIso": "2016-01-11", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Manuar Hossain Dhali", "fatherPhone": "8116633153", "fatherWhatsapp": "8116633153", "motherName": "Jarina Dhali", "motherPhone": "8116633153", "motherWhatsapp": "8116633153", "village": "Kamaria", "postOffice": "Kamaria", "policeStation": "Jaynagar", "district": "24 pgs (S)", "pinCode": "743337", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:45:43"}, {"id": "141", "appId": "AMM202627383", "session": "2027", "applyingClass": "V", "name": "Sohan Laskar", "gender": "Male", "caste": "General", "dob": "20/11/2015", "dobIso": "2015-11-20", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Abdul Alim Laskar", "fatherPhone": "9735465285", "fatherWhatsapp": "9735465285", "motherName": "Halima Bibi Laskar", "motherPhone": "9735465285", "motherWhatsapp": "9735465285", "village": "Fatikbaria", "postOffice": "Konchfal", "policeStation": "Dhola Hat", "district": "24 pgs (S)", "pinCode": "743399", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:27:49"}, {"id": "140", "appId": "AMM202697157", "session": "2027", "applyingClass": "V", "name": "Samim Khan", "gender": "Male", "caste": "General", "dob": "12/03/2016", "dobIso": "2016-03-12", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Alamgir Khan", "fatherPhone": "8250891894", "fatherWhatsapp": "8250891894", "motherName": "Not Mentioned", "motherPhone": "8250891894", "motherWhatsapp": "8250891894", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:15:47"}, {"id": "139", "appId": "AMM202697188", "session": "2027", "applyingClass": "VIII", "name": "Ramisah Samshe Khatun", "gender": "Female", "caste": "General", "dob": "29/08/2013", "dobIso": "2013-08-29", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Kauchhar Ali Halder", "fatherPhone": "9593316058", "fatherWhatsapp": "9593316058", "motherName": "Not Mentioned", "motherPhone": "9593316058", "motherWhatsapp": "9593316058", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 13:01:09"}, {"id": "138", "appId": "AMM202622068", "session": "2027", "applyingClass": "VIII", "name": "Mahaima Halder", "gender": "Female", "caste": "General", "dob": "18/02/2013", "dobIso": "2013-02-18", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Abdul Maruf", "fatherPhone": "8207021708", "fatherWhatsapp": "8207021708", "motherName": "Not Mentioned", "motherPhone": "8207021708", "motherWhatsapp": "8207021708", "village": "Nilambarpur", "postOffice": "Nilambarpur", "policeStation": "Mandir Bazar", "district": "24 pgs (S)", "pinCode": "743336", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 12:58:31"}, {"id": "137", "appId": "AMM202611304", "session": "2027", "applyingClass": "VIII", "name": "Sabnom Molla", "gender": "Female", "caste": "General", "dob": "07/05/2013", "dobIso": "2013-05-07", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Ahasan Ulla Molla", "fatherPhone": "8250592993", "fatherWhatsapp": "9564984608", "motherName": "Najima Molla", "motherPhone": "8250592993", "motherWhatsapp": "9564984608", "village": "Kirtankhola", "postOffice": "Kripakhali", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 12:14:54"}, {"id": "136", "appId": "AMM202613268", "session": "2027", "applyingClass": "VIII", "name": "Sahil Sk", "gender": "Male", "caste": "General", "dob": "06/06/2013", "dobIso": "2013-06-06", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Motibur Rahaman Sk", "fatherPhone": "6296020338", "fatherWhatsapp": "6296020338", "motherName": "Not Mentioned", "motherPhone": "6296020338", "motherWhatsapp": "", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 12:04:53"}, {"id": "135", "appId": "AMM202685091", "session": "2027", "applyingClass": "VI", "name": "Mirajul Sardar", "gender": "Male", "caste": "General", "dob": "16/07/2015", "dobIso": "2015-07-16", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Ainul Sardar", "fatherPhone": "7001658274", "fatherWhatsapp": "7001658274", "motherName": "Mamtaj Sardar", "motherPhone": "7001658274", "motherWhatsapp": "7001658274", "village": "Not Mentioned", "postOffice": "Not Mentioned", "policeStation": "Not Mentioned", "district": "24 pgs (S)", "pinCode": "111111", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 11:59:44"}, {"id": "134", "appId": "AMM202647564", "session": "2027", "applyingClass": "VIII", "name": "Tabassum Molla", "gender": "Female", "caste": "General", "dob": "16/11/2013", "dobIso": "2013-11-16", "bloodGroup": "A+", "schoolName": "Not Mentioned", "fatherName": "Younus Ali Molla", "fatherPhone": "9088671277", "fatherWhatsapp": "9732396595", "motherName": "Mabiya Molla", "motherPhone": "9088671277", "motherWhatsapp": "9732396595", "village": "Gopalnagar", "postOffice": "Gopalnagar", "policeStation": "Kultali", "district": "24 pgs (S)", "pinCode": "743338", "paymentStatus": "success", "paymentMethod": "Cash", "status": "admitted", "createdAt": "2026-11-05 11:55:22"}, {"id": "133", "appId": "AMM202626020", "session": "2027", "applyingClass": "V", "name": "Shanwaz Laskar", "gender": "Male", "caste": "General", "dob": "12/04/2016", "dobIso": "2016-04-12", "bloodGroup": "A+", "schoolName": "Chalantika Nursery K.G School", "fatherName": "Late Sajjad Laskar", "fatherPhone": "7363916996", "fat
